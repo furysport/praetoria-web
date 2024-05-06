@@ -2,17 +2,17 @@ import type { PhasesConfig } from '../../types/config.type'
 import { getPhaseStatus } from '../../utils'
 import type { PhaseDTO } from './dto.type'
 
-export const imbolc = ({
-  imbolc: {
+export const munitio = ({
+  munitio: {
     startDate,
     endDate,
     urls: { exposeRPCUrl, provideSnapshotUrl, provideDashboardUrl }
   }
 }: PhasesConfig): PhaseDTO => ({
   number: 2,
-  phaseName: 'imbolc',
+  phaseName: 'munitio',
   phaseDescription:
-    "The second phase is focused on testing Druids' performance & security, even under stressed conditions… Only the stronger will survive. Good luck to all!",
+    "The second phase is focused on testing Dragoons' performance & security, even under stressed conditions… Only the stronger will survive. Good luck to all!",
   status: getPhaseStatus(startDate, endDate),
   phaseDuration: {
     from: startDate,
@@ -38,7 +38,7 @@ export const imbolc = ({
           title: 'Judging Criteria',
           contentDescription: (
             <p>
-              You will receive the points once the OKP4 team has checked your RPC endpoint
+              You will receive the points once the Furya team has checked your RPC endpoint
               availability.
             </p>
           )
@@ -52,7 +52,7 @@ export const imbolc = ({
               <a href={exposeRPCUrl} rel="noreferrer" target="_blank">
                 this form
               </a>
-              . Only one submission per druid will be studied.
+              . Only one submission per dragoon will be studied.
             </p>
           )
         }
@@ -82,7 +82,7 @@ export const imbolc = ({
           title: 'Judging Criteria',
           contentDescription: (
             <p>
-              You will receive the points once the OKP4 team has checked your snapshots
+              You will receive the points once the Furya team has checked your snapshots
               availability.
             </p>
           )
@@ -96,7 +96,7 @@ export const imbolc = ({
               <a href={provideSnapshotUrl} rel="noreferrer" target="_blank">
                 this form
               </a>
-              . Only one submission per druid will be studied.
+              . Only one submission per dragoon will be studied.
             </p>
           )
         }
@@ -109,7 +109,7 @@ export const imbolc = ({
     },
     {
       group: 'Nodes',
-      taskName: 'Provide dashboard for the OKP4 network',
+      taskName: 'Provide dashboard for the Furya network',
       taskContent: [
         {
           id: 'description',
@@ -133,7 +133,7 @@ export const imbolc = ({
           contentDescription: (
             <>
               <p>
-                OKP4 team will judge if any submission deserves points or not based on the
+                Furya team will judge if any submission deserves points or not based on the
                 following:{' '}
               </p>
               <ul>
@@ -154,7 +154,7 @@ export const imbolc = ({
               <a href={provideDashboardUrl} rel="noreferrer" target="_blank">
                 this form
               </a>
-              . Only one submission per druid will be studied.
+              . Only one submission per dragoon will be studied.
             </p>
           )
         }
@@ -174,7 +174,7 @@ export const imbolc = ({
           title: 'Description',
           contentDescription: (
             <p>
-              Publish a tweet about the Uptime challenge while including the @OKP4_PROTOCOL tag
+              Publish a tweet about the Uptime challenge while including the @Furya_PROTOCOL tag
               using your validator Twitter account. Feel free to share your excitement!
             </p>
           )
@@ -188,7 +188,7 @@ export const imbolc = ({
           id: 'criteria',
           title: 'Judging Criteria',
           contentDescription: (
-            <p>You will receive the points once the OKP4 team has reviewed your tweet.</p>
+            <p>You will receive the points once the Furya team has reviewed your tweet.</p>
           )
         },
         {

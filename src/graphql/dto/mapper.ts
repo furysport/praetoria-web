@@ -1,8 +1,8 @@
-import type { Druid, DruidDescriptor, PodiumDruid } from '../../entity/druid'
+import type { Dragoon, DragoonDescriptor, PodiumDragoon } from '../../entity/dragoon'
 import type { QValidatorQuery, SubmissionTaskState } from '../generated/query/types'
 import type { PodiumValidatorEdgeDTO, ValidatorEdgeDTO } from './dto.types'
 
-export const mapValidatorEdgeDTOToDruid = (dto: ValidatorEdgeDTO): DruidDescriptor => ({
+export const mapValidatorEdgeDTOToDragoon = (dto: ValidatorEdgeDTO): DragoonDescriptor => ({
   rank: dto.node.rank,
   identity: {
     name: dto.node.moniker,
@@ -16,9 +16,9 @@ export const mapValidatorEdgeDTOToDruid = (dto: ValidatorEdgeDTO): DruidDescript
   }
 })
 
-export const mapPodiumValidatorEdgeDTOToPodiumDruid = (
+export const mapPodiumValidatorEdgeDTOToPodiumDragoon = (
   dto: PodiumValidatorEdgeDTO
-): PodiumDruid => ({
+): PodiumDragoon => ({
   rank: dto.node.rank,
   identity: {
     name: dto.node.moniker,
@@ -26,7 +26,7 @@ export const mapPodiumValidatorEdgeDTOToPodiumDruid = (
   }
 })
 
-export const mapValidatorDTOToDruid = (dto: QValidatorQuery['validator']): Druid | null =>
+export const mapValidatorDTOToDragoon = (dto: QValidatorQuery['validator']): Dragoon | null =>
   dto
     ? {
         profile: {

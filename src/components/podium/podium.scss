@@ -1,4 +1,4 @@
-.okp4-nemeton-web-podium-main {
+.furya-praetoria-web-podium-main {
   @include with-gradient-container;
   min-height: 227px;
   margin-top: 76px;
@@ -7,7 +7,7 @@
     width: 100%;
   }
 
-  .okp4-nemeton-web-podium-steps-container {
+  .furya-praetoria-web-podium-steps-container {
     display: flex;
     gap: 80px;
     margin-left: auto;
@@ -19,7 +19,7 @@
       width: 100%;
     }
 
-    .okp4-nemeton-web-podium-step-container {
+    .furya-praetoria-web-podium-step-container {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -56,7 +56,7 @@
         }
       }
 
-      .okp4-nemeton-web-podium-step-wrapper {
+      .furya-praetoria-web-podium-step-wrapper {
         width: 155px;
         height: 155px;
         border-style: solid;
@@ -78,7 +78,7 @@
           }
         }
 
-        .okp4-nemeton-web-podium-step-rank-container {
+        .furya-praetoria-web-podium-step-rank-container {
           width: 60%;
           border-radius: 0 14px;
           position: absolute;

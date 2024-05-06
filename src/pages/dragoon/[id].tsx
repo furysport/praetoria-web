@@ -10,18 +10,18 @@ import { config } from '../../lib/config'
 import type { Config } from '../../types/config.type'
 import client from '../../graphql/apolloClient'
 import { Profile } from '../../components/profile/profile'
-import { Druid } from '../../entity/druid'
+import { Dragoon } from '../../entity/dragoon'
 import { Snackbar } from '../../components/snackbar/Snackbar'
 import { TasksSummary } from '../../components/tasks/TasksSummary'
 import { LottieLoader } from '../../components/loader/LottieLoader'
-import hatDruidAnimationData from '../../../public/json/hat-druid.json'
+import hatDragoonAnimationData from '../../../public/json/hat-dragoon.json'
 import { useMediaType } from '../../hook/useMediaType'
-import { mapValidatorDTOToDruid } from '../../graphql/dto/mapper'
+import { mapValidatorDTOToDragoon } from '../../graphql/dto/mapper'
 
-export type DruidProps = Pick<Config, 'title' | 'keywords' | 'description' | 'urls'>
+export type DragoonProps = Pick<Config, 'title' | 'keywords' | 'description' | 'urls'>
 
-const Druid: NextPage<DruidProps> = props => {
-  const [druid, setDruid] = useState<Druid | null>(null)
+const Dragoon: NextPage<DragoonProps> = props => {
+  const [dragoon, setDragoon] = useState<Dragoon | null>(null)
   const [address, setAddress] = useState<string>('')
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
 
@@ -38,11 +38,11 @@ const Druid: NextPage<DruidProps> = props => {
     skip: !id,
     client: gqlClient,
     fetchPolicy: 'network-only',
-    onCompleted: data => data.validator && setDruid(mapValidatorDTOToDruid(data.validator)),
+    onCompleted: data => data.validator && setDragoon(mapValidatorDTOToDragoon(data.validator)),
     onError: error => {
       console.error(error)
       setErrorMessage(
-        'Oops... Druid profile could not be properly retrieved... Please try again later.'
+        'Oops... Dragoon profile could not be properly retrieved... Please try again later.'
       )
     }
   })
@@ -64,30 +64,30 @@ const Druid: NextPage<DruidProps> = props => {
 
   return (
     <>
-      <div className="okp4-nemeton-web-page-main">
+      <div className="furya-praetoria-web-page-main">
         <Head {...props} />
         <main>
           <Header />
-          <div className="okp4-nemeton-web-page-content-container" id="profile">
-            <div className="okp4-nemeton-web-page-druid-main-container">
+          <div className="furya-praetoria-web-page-content-container" id="profile">
+            <div className="furya-praetoria-web-page-dragoon-main-container">
               <GoBackButton />
               {loading && (
-                <div className="okp4-nemeton-web-loader-container">
+                <div className="furya-praetoria-web-loader-container">
                   <LottieLoader
-                    animationData={hatDruidAnimationData}
+                    animationData={hatDragoonAnimationData}
                     width={isMobileScreen ? 80 : 160}
                   />
-                  <span>Loading druid...</span>
+                  <span>Loading dragoon...</span>
                 </div>
               )}
-              {druid && !loading && (
+              {dragoon && !loading && (
                 <>
                   <Profile
-                    druidProfile={druid.profile}
+                    dragoonProfile={dragoon.profile}
                     explorerUrl={urls.explorerUrl}
                     onValoperCopied={handleCopyAddress}
                   />
-                  <TasksSummary points={druid.profile.points} tasksPerPhase={druid.tasksPerPhase} />
+                  <TasksSummary points={dragoon.profile.points} tasksPerPhase={dragoon.tasksPerPhase} />
                 </>
               )}
             </div>
@@ -111,10 +111,10 @@ const Druid: NextPage<DruidProps> = props => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps<DruidProps> = async () => ({
+export const getServerSideProps: GetServerSideProps<DragoonProps> = async () => ({
   props: {
     ...config
   }
 })
 
-export default Druid
+export default Dragoon

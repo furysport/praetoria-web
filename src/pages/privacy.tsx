@@ -11,21 +11,21 @@ const Privacy: NextPage<PrivacyProps> = props => {
   const { urls } = props
   const {
     privacyUrls: { cookiePolicyUrl },
-    supportUrls: { discordNemetonUrl },
+    supportUrls: { discordPraetoriaUrl },
     mailAddresses: { contact }
   } = urls
 
   return (
-    <div className="okp4-nemeton-web-page-main">
+    <div className="furya-praetoria-web-page-main">
       <Head {...props} />
       <main>
         <Header />
-        <div className="okp4-nemeton-web-page-content-container" id="privacy-cookie-policy">
+        <div className="furya-praetoria-web-page-content-container" id="privacy-cookie-policy">
           <h1>Privacy & Cookie policy</h1>
           <p>Last updated: October 19, 2022</p>
           <p>
-            OKP4 (hereinafter referred to as &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;)
-            operates the okp4.network website (hereinafter referred to as &quot;the Site&quot;),
+            Furya (hereinafter referred to as &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;)
+            operates the furya.network website (hereinafter referred to as &quot;the Site&quot;),
             which provides the service (hereinafter referred to as &quot;the Service&quot;). This
             page informs you of our policies regarding the collection, use, and disclosure of
             personal information that we receive from users of the Site, identified below
@@ -90,7 +90,7 @@ const Privacy: NextPage<PrivacyProps> = props => {
             <h2>COMMUNICATIONS</h2>
             <p>
               We will only use your Personal Information to contact you to confirm your enrolment in
-              the Nemeton Program, to provide you with updates, and for any other Information needed
+              the Praetoria Program, to provide you with updates, and for any other Information needed
               to run the Testnet. Your Personal Information will not be shared with third parties
               for marketing or advertising purposes and will not be sold under any circumstances.
             </p>
@@ -243,15 +243,15 @@ const Privacy: NextPage<PrivacyProps> = props => {
             <h2>CONTACT US</h2>
             <p>
               If you have any questions about this privacy policy, please contact us in{' '}
-              <a href={discordNemetonUrl} rel="noreferrer" target="_blank">
-                our Nemeton program channel
+              <a href={discordPraetoriaUrl} rel="noreferrer" target="_blank">
+                our Praetoria program channel
               </a>{' '}
-              on OKP4 Discord server or at <a href={`mailto:${contact}`}>{'nemeton@okp4.com'}</a>
+              on Furya Discord server or at <a href={`mailto:${contact}`}>{'praetoria@furya.com'}</a>
             </p>
             <p>You can also contact us by post using the information below:</p>
             <ul>
               <li>
-                <p>OKP4</p>
+                <p>Furya</p>
               </li>
               <li>
                 <p>1 passage de l’Europe</p>

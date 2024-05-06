@@ -20,34 +20,34 @@ const Terms: NextPage<TermsProps> = props => {
   } = urls
 
   return (
-    <div className="okp4-nemeton-web-page-main">
+    <div className="furya-praetoria-web-page-main">
       <Head {...props} />
       <main>
         <Header />
-        <div className="okp4-nemeton-web-page-content-container" id="terms-conditions">
+        <div className="furya-praetoria-web-page-content-container" id="terms-conditions">
           <h1>Terms & conditions</h1>
 
-          <div className="okp4-nemeton-web-page-terms-update">
-            <div className="okp4-nemeton-web-page-terms-update-title" id="update-jan-11-2023">
+          <div className="furya-praetoria-web-page-terms-update">
+            <div className="furya-praetoria-web-page-terms-update-title" id="update-jan-11-2023">
               <h2>Update</h2>
               <h3>Jan 11th 2023</h3>
             </div>
             <p>
-              In order to maintain the integrity and efficiency of the Nemeton program, OKP4 has
+              In order to maintain the integrity and efficiency of the Praetoria program, Furya has
               implemented the following terms and conditions for validator nodes:
             </p>
             <p>
               If a validator node fails to validate a block for a consecutive period of{' '}
-              <span className="okp4-nemeton-web-bold-text">
-                100,000 blocks, OKP4 reserves the right to terminate the participant&apos;s
+              <span className="furya-praetoria-web-bold-text">
+                100,000 blocks, Furya reserves the right to terminate the participant&apos;s
                 participation
               </span>{' '}
-              in the Nemeton program and remove them from the leaderboard. This is to ensure that
+              in the Praetoria program and remove them from the leaderboard. This is to ensure that
               all validator nodes are actively contributing to the network and that the program is
               operating in an optimal manner.
             </p>
             <p>
-              If OKP4 decides to terminate a participant&apos;s participation, the participant will
+              If Furya decides to terminate a participant&apos;s participation, the participant will
               be notified via{' '}
               <a href={discordUrl} rel="noreferrer" target="_blank">
                 Discord
@@ -72,20 +72,20 @@ const Terms: NextPage<TermsProps> = props => {
           </div>
 
           <p>
-            These Nemeton Testnet participation Terms & Conditions (the &quot;Terms&quot;) apply to
+            These Praetoria Testnet participation Terms & Conditions (the &quot;Terms&quot;) apply to
             your access to and use of the websites, platform, software, technologies, features and
-            other online products and services (collectively, the &quot;OKP4 Services&quot; or
-            &quot;Services&quot;) provided or made available by OKP4 SAS, a French company
+            other online products and services (collectively, the &quot;Furya Services&quot; or
+            &quot;Services&quot;) provided or made available by Furya SAS, a French company
             registered under number 842765356 and whose registered office is located at 1 passage de
-            l&apos;Europe - 31400 Toulouse - France (the &quot;Company&quot;, &quot;OKP4&quot;, or
+            l&apos;Europe - 31400 Toulouse - France (the &quot;Company&quot;, &quot;Furya&quot;, or
             &quot;we&quot;) in connection with the Testnet (&quot;Testnet&quot;, or
-            &quot;Nemeton&quot;).
+            &quot;Praetoria&quot;).
           </p>
 
           <p>
-            The Nemeton program is designed to improve the operational experience, security, and
-            design of the OKP4 mainnet protocol as well as to expose potential issues and improve
-            the experience of participants prior to the launch of the OKP4 mainnet and OKP4 DAO
+            The Praetoria program is designed to improve the operational experience, security, and
+            design of the Furya mainnet protocol as well as to expose potential issues and improve
+            the experience of participants prior to the launch of the Furya mainnet and Furya DAO
             operation.
           </p>
 
@@ -94,10 +94,10 @@ const Terms: NextPage<TermsProps> = props => {
               <h2>Agreement on the conditions</h2>
             </li>
             <p>
-              By accessing or using our OKP4 Services, or by participating in our Testnet, you agree
+              By accessing or using our Furya Services, or by participating in our Testnet, you agree
               to these Terms and Conditions as well as our{' '}
               <Link href={privacyUrl}>Privacy Policy</Link> and any other agreements or terms set
-              forth by OKP4. These Terms constitute a binding obligation between you and OKP4. If
+              forth by Furya. These Terms constitute a binding obligation between you and Furya. If
               you do not agree to these Terms, do not use our Services; if you do use our Services,
               you accept this Agreement. If you have any questions about these Terms, the Services
               or the Testnet, please contact us at <a href={`mailto:${contact}`}>{contact}</a>.
@@ -107,31 +107,31 @@ const Terms: NextPage<TermsProps> = props => {
             </li>
             <p>
               Please refer to our <Link href={privacyUrl}>Privacy Policy</Link> for more details on
-              what information OKP4 may collect, use, or disclose and under what circumstances. You
-              acknowledge and agree that your participation in Nemeton is subject to this Privacy
+              what information Furya may collect, use, or disclose and under what circumstances. You
+              acknowledge and agree that your participation in Praetoria is subject to this Privacy
               Policy.
             </p>
             <li>
               <h2>Change to the Terms</h2>
             </li>
             <p>
-              OKP4, in its sole discretion, may update the Terms at any time. In that event, OKP4
-              will provide notice either by posting the updated Terms on its website, on any OKP4
+              Furya, in its sole discretion, may update the Terms at any time. In that event, Furya
+              will provide notice either by posting the updated Terms on its website, on any Furya
               blog or forum used for information sharing, or by other means of communication. It is
-              important that you review all updated Terms. If you continue to participate in Nemeton
-              after OKP4 has posted updated Terms, you agree to be bound by the new Terms. If you do
+              important that you review all updated Terms. If you continue to participate in Praetoria
+              after Furya has posted updated Terms, you agree to be bound by the new Terms. If you do
               not agree to be bound by the new Terms, you will not be able to participate in
-              Nemeton.
+              Praetoria.
             </p>
             <li>
               <h2>Duration of the Testnet</h2>
             </li>
             <p>
-              Nemeton will begin on the date prescribed by OKP4 and will continue until terminated
-              by OKP4 in its sole discretion (&quot;Testnet Period&quot;). Notwithstanding any other
-              information provided by OKP4 regarding the Testnet (including on its website, blog
+              Praetoria will begin on the date prescribed by Furya and will continue until terminated
+              by Furya in its sole discretion (&quot;Testnet Period&quot;). Notwithstanding any other
+              information provided by Furya regarding the Testnet (including on its website, blog
               posts or through other communications - forum, Discord, Telegram or other channels),
-              OKP4 may modify, suspend or terminate, temporarily or permanently, all or any part of
+              Furya may modify, suspend or terminate, temporarily or permanently, all or any part of
               the Testnet, at any time and without notice, in its sole discretion (including prior
               to providing any incentives or rewards).
             </p>
@@ -140,7 +140,7 @@ const Terms: NextPage<TermsProps> = props => {
             </li>
             <p>
               You may participate in the Testnet only if: (a) you are 18 years of age or older and
-              capable of entering into a binding contract with OKP4 ; (b) you are not subject to any
+              capable of entering into a binding contract with Furya ; (b) you are not subject to any
               sanctions administered or enforced by any country or government or otherwise
               designated on a list of prohibited or restricted parties (including, but not limited
               to, lists maintained by the United Nations Security Council, the United States
@@ -151,12 +151,12 @@ const Terms: NextPage<TermsProps> = props => {
               regions, Iran or Syria) ; and (c) you are not barred from participating under
               applicable law. In addition, to be eligible for incentives or rewards in the Testnet,
               you (i) must be an individual or entity, and (ii) must not be an employee, consultant,
-              or affiliate of OKP4.
+              or affiliate of Furya.
             </p>
 
             <p>
-              Moreover, to participate in Nemeton, participants must demonstrate their ability to
-              configure and deploy an OKP4 node to OKP4&apos;s satisfaction, in its sole discretion,
+              Moreover, to participate in Praetoria, participants must demonstrate their ability to
+              configure and deploy an Furya node to Furya&apos;s satisfaction, in its sole discretion,
               and will be required to provide certain identifying information (e.g., name, place of
               residence or domicile, date of birth, etc.) and related documentation, and to pass the
               sanctions and watch list check. If you fail to provide such identifying information,
@@ -168,16 +168,16 @@ const Terms: NextPage<TermsProps> = props => {
 
             <p>
               From among those applicants who register for the Testnet with incentive and meet all
-              eligibility requirements, OKP4 will select Testnet participants in its sole
-              discretion, based on criteria determined by OKP4 (including, but not limited to,
+              eligibility requirements, Furya will select Testnet participants in its sole
+              discretion, based on criteria determined by Furya (including, but not limited to,
               geographic distribution and applicant reputation). By applying or registering, there
               is no promise or guarantee that you will be able to participate in the Testnet.
             </p>
 
             <p>
-              Based on information provided by OKP4 regarding the Testnet (including on its website,
+              Based on information provided by Furya regarding the Testnet (including on its website,
               in blog posts or through other communications (such as forums, Telegram, Discord or
-              other channels), OKP4 may change or modify at any time the number of participants who
+              other channels), Furya may change or modify at any time the number of participants who
               may participate in the Testnet or the requirements of the Testnet and may terminate
               the participation of any participant at any time.
             </p>
@@ -191,18 +191,18 @@ const Terms: NextPage<TermsProps> = props => {
               <h2>Third Party Services</h2>
             </li>
             <p>
-              OKP4 may share identifying information and documents with certain third party vendors
+              Furya may share identifying information and documents with certain third party vendors
               or providers that offer identity verification and sanctions monitoring services and
               watch lists (the &quot;Third Party Services&quot;).
             </p>
 
             <p>
               You agree that your access to and use of such Third Party Services is governed solely
-              by the terms and conditions of such Third Party Services, and OKP4 is not responsible
+              by the terms and conditions of such Third Party Services, and Furya is not responsible
               for, and makes no representations about, any aspect of such Third Party Services,
               including, without limitation, their content or the manner in which they handle,
               protect, manage or process data or any interaction between you and the provider of
-              such Third Party Services. You irrevocably waive any claim against OKP4 with respect
+              such Third Party Services. You irrevocably waive any claim against Furya with respect
               to such Third Party Services. We are not responsible for any damage or loss caused or
               alleged to be caused by or in connection with your activation, access or use of such
               Third Party Services, or your reliance on the privacy practices, data security
@@ -212,42 +212,42 @@ const Terms: NextPage<TermsProps> = props => {
               <h2>Rewards & Incentives</h2>
             </li>
             <p>
-              As part of your participation in the Testnet, OKP4 may choose, at its sole discretion,
+              As part of your participation in the Testnet, Furya may choose, at its sole discretion,
               to provide certain incentives or rewards to eligible participants for completing
               certain activities, including executing a validation node and meeting certain
-              performance criteria or other requirements set by OKP4. More details are available on
-              the Nemeton program website. Other contributions to the Testnet may also be rewarded
-              by OKP4, at its discretion. These rewards may include OKP4 mainnet tokens; however,
-              (i) such OKP4 mainnet tokens will only be provided after the successful launch of the
+              performance criteria or other requirements set by Furya. More details are available on
+              the Praetoria program website. Other contributions to the Testnet may also be rewarded
+              by Furya, at its discretion. These rewards may include Furya mainnet tokens; however,
+              (i) such Furya mainnet tokens will only be provided after the successful launch of the
               mainnet and all tokens provided will be subject to an 18-month linear vesting period,
               (ii) to comply with laws and regulations in accordance to the United States and
               Canada, miners operating as U.S. or Canadian parties will be asked to prove their
               status as an accredited investor prior to receiving any rewards. Notwithstanding any
-              other information provided by OKP4 regarding the Testnet (including on its website,
+              other information provided by Furya regarding the Testnet (including on its website,
               blog posts or through other communications (such as forums, Telegram, Discord or other
-              channels)), OKP4 may, at its sole discretion, change or modify the amounts or types of
+              channels)), Furya may, at its sole discretion, change or modify the amounts or types of
               rewards or incentives and/or suspend or terminate, temporarily or permanently, all or
-              any part of the incentives or rewards program at any time without notice, and OKP4 may
+              any part of the incentives or rewards program at any time without notice, and Furya may
               remove or reassign any rewards or incentives earned by a participant or choose not to
               provide rewards to a participant.
             </p>
 
             <p>
-              OKP4 reserves the right to block your access to Testnet if you violate any of the
-              terms and conditions of the Terms (as determined solely by OKP4) or if you fail to
+              Furya reserves the right to block your access to Testnet if you violate any of the
+              terms and conditions of the Terms (as determined solely by Furya) or if you fail to
               complete the required information or provide accurate information; you will not be
               eligible to receive rewards.
             </p>
 
             <p>
-              OKP4 reserves the right to request information about, review and investigate all
+              Furya reserves the right to request information about, review and investigate all
               Testnet activities and to disqualify participants if it believes that a participant
               has engaged in abusive, fraudulent, bad faith activity or activity that does not
-              comply with Nemeton standards and requirements.
+              comply with Praetoria standards and requirements.
             </p>
 
             <p>
-              You agree that any rewards or incentives received are for your Testnet OKP4 testing
+              You agree that any rewards or incentives received are for your Testnet Furya testing
               services.
             </p>
             <li>
@@ -255,18 +255,18 @@ const Terms: NextPage<TermsProps> = props => {
             </li>
             <p>
               You are responsible for paying all taxes associated with your receipt of any rewards
-              (including, if applicable, OKP4 mainnet tokens). You agree to provide OKP4 with any
+              (including, if applicable, Furya mainnet tokens). You agree to provide Furya with any
               additional information and to complete any tax or other forms required in connection
               with your receipt of such rewards.
             </p>
 
             <p>
-              You may suffer adverse tax consequences because of your participation in Nemeton. You
+              You may suffer adverse tax consequences because of your participation in Praetoria. You
               hereby represent that (i) you have consulted with any tax advisor that you deem
               appropriate in connection with your participation, or that you have had the
-              opportunity to obtain tax advice but have chosen not to do so, (ii) OKP4 has not
+              opportunity to obtain tax advice but have chosen not to do so, (ii) Furya has not
               provided you with any tax advice in connection with your participation, and (iii) you
-              are not relying on OKP4 for any tax advice.
+              are not relying on Furya for any tax advice.
             </p>
             <li>
               <h2>Security & Wallet</h2>
@@ -274,15 +274,15 @@ const Terms: NextPage<TermsProps> = props => {
             <p>
               You are responsible for maintaining adequate security and control of all identifiers,
               passwords, indicia, personal identification numbers (PINs) or other codes that you use
-              to access the Testnet as part of your systems. OKP4 assumes no responsibility for any
+              to access the Testnet as part of your systems. Furya assumes no responsibility for any
               losses resulting from a compromise of your systems or wallet(s).
             </p>
 
             <p>
               As part of certain phases of Testnet, Mainnet, or as part of providing
-              incentives/rewards, OKP4 may send or receive Testnet tokens or rewards on your wallet
+              incentives/rewards, Furya may send or receive Testnet tokens or rewards on your wallet
               application. In this case, you are responsible for managing the private keys and
-              security of your wallet(s). OKP4 does not and will not manage, store, collect or
+              security of your wallet(s). Furya does not and will not manage, store, collect or
               otherwise access the private keys of your wallet(s). You are responsible for all
               activities that occur while using your wallet, whether or not you have knowledge of
               them.
@@ -298,7 +298,7 @@ const Terms: NextPage<TermsProps> = props => {
               Updates and you must accept any patches, system upgrades, bug fixes, feature changes
               or other maintenance work that results from such Updates. We are not responsible for
               any failure on your part to accept and use such Updates in the manner specified or
-              required by us. While OKP4 is not obligated to monitor access to or participation in
+              required by us. While Furya is not obligated to monitor access to or participation in
               the Testnet, it has the right to do so for the purpose of operating the Testnet,
               ensuring compliance with the Terms, and complying with applicable laws or other legal
               requirements.
@@ -307,7 +307,7 @@ const Terms: NextPage<TermsProps> = props => {
               <h2>Testnet tokens & Testnet</h2>
             </li>
             <p>
-              No monetary value. As part of your use of Nemeton, you may accumulate &quot;Testnet
+              No monetary value. As part of your use of Praetoria, you may accumulate &quot;Testnet
               Tokens&quot;, for example through a faucet, which are not, and will never be,
               converted into or accumulated as Mainnet Tokens or any other virtual token or asset.
               Testnet Tokens are virtual objects with no monetary value. Testnet Tokens are not
@@ -320,16 +320,16 @@ const Terms: NextPage<TermsProps> = props => {
             </p>
 
             <p>
-              Modification. OKP4 may, in its sole discretion, decide to delete, erase, or otherwise
+              Modification. Furya may, in its sole discretion, decide to delete, erase, or otherwise
               withdraw the Testnet at any time without notice, including, without limitation,
               changing the presence, amounts, or any other terms and conditions applicable to
-              Testnet Tokens, without any liability to you or other users of the Testnet. OKP4 does
+              Testnet Tokens, without any liability to you or other users of the Testnet. Furya does
               not guarantee that Testnet Tokens will continue to be offered for any specific period
               and you cannot rely on the continued availability of any Testnet Token. If the Testnet
               expires or terminates, you acknowledge and agree that your access to and use of your
               Testnet Tokens will be terminated, and that all accumulated Testnet Tokens will be
               deleted from the Testnet system. Testnet Tokens will not be converted to future
-              rewards offered by OKP4.
+              rewards offered by Furya.
             </p>
             <li>
               <h2>Intellectual Property Rights & Feedback</h2>
@@ -343,7 +343,7 @@ const Terms: NextPage<TermsProps> = props => {
             <ul>
               <li>
                 <p>
-                  All OKP4 elements related to blockchain (mainly, but not limited to, blockchain
+                  All Furya elements related to blockchain (mainly, but not limited to, blockchain
                   and smart contracts) are subject to the license{' '}
                   <a href={blockchainLicenceUrl} rel="noreferrer" target="_blank">
                     Apache-2
@@ -353,7 +353,7 @@ const Terms: NextPage<TermsProps> = props => {
               </li>
               <li>
                 <p>
-                  Other OKP4 code elements not related to the blockchain are subject to the license{' '}
+                  Other Furya code elements not related to the blockchain are subject to the license{' '}
                   <a href={codeLicenceUrl} rel="noreferrer" target="_blank">
                     BSD 3-Clause
                   </a>
@@ -362,7 +362,7 @@ const Terms: NextPage<TermsProps> = props => {
               </li>
               <li>
                 <p>
-                  The other OKP4 elements of content and other works (documents, images... without
+                  The other Furya elements of content and other works (documents, images... without
                   limitation) are subject to the license{' '}
                   <a href={assetsLicenceUrl} rel="noreferrer" target="_blank">
                     Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -378,8 +378,8 @@ const Terms: NextPage<TermsProps> = props => {
               </li>
             </ul>
             <p>
-              OKP4 welcomes feedback, comments, and suggestions for improvement from Nemeton and
-              related OKP4 protocol technologies (&quot;Feedback&quot;). You grant OKP4 a
+              Furya welcomes feedback, comments, and suggestions for improvement from Praetoria and
+              related Furya protocol technologies (&quot;Feedback&quot;). You grant Furya a
               non-exclusive, transferable, worldwide, perpetual, irrevocable, fully paid,
               royalty-free license, with the right to sublicense, under any intellectual property
               rights you own or control, to use, copy, modify, create derivative works based on, and
@@ -399,8 +399,8 @@ const Terms: NextPage<TermsProps> = props => {
               </li>
               <li>
                 <p>
-                  Unless specifically requested by OKP4 as part of a security or similar challenge,
-                  disrupt or launch attacks against users of OKP4 Services or the Testnet;
+                  Unless specifically requested by Furya as part of a security or similar challenge,
+                  disrupt or launch attacks against users of Furya Services or the Testnet;
                 </p>
               </li>
               <li>
@@ -429,7 +429,7 @@ const Terms: NextPage<TermsProps> = props => {
                 </p>
               </li>
               <li>
-                <p>Sell or resell the OKP4 Services;</p>
+                <p>Sell or resell the Furya Services;</p>
               </li>
               <li>
                 <p>
@@ -446,7 +446,7 @@ const Terms: NextPage<TermsProps> = props => {
               practices in the relevant jurisdictions (including laws regarding the export of data
               or software to and from France or other relevant countries and all applicable privacy
               and data collection laws and regulations) in connection with your participation in
-              Nemeton. To the extent required by law, you are solely responsible for obtaining or
+              Praetoria. To the extent required by law, you are solely responsible for obtaining or
               filing any regulatory approval, authorization, registration, permit or other
               authorization and must comply with the requirements of such authorization.
             </p>
@@ -454,33 +454,33 @@ const Terms: NextPage<TermsProps> = props => {
               <h2>Warranty Disclaimer</h2>
             </li>
             <p>
-              OKP4 makes no representations or warranties of any kind with respect to our Testnet.
+              Furya makes no representations or warranties of any kind with respect to our Testnet.
               The Testnet is provided &quot;as is&quot; with all faults and without warranty of any
-              kind. Without limiting the foregoing, OKP4 expressly disclaims any implied warranties
+              kind. Without limiting the foregoing, Furya expressly disclaims any implied warranties
               of merchantability, fitness for a particular purpose, value, quiet enjoyment, and
               non-infringement, as well as any warranties arising out of the ordinary course of
-              business or usage of trade. OKP4 has made no promises or warranties regarding the
+              business or usage of trade. Furya has made no promises or warranties regarding the
               delivery of any future features or functions. Any discussion of future features or
               functions, whether before or after acceptance of these Terms, is for informational
-              purposes only and OKP4 has no obligation to provide such features or functions. You
+              purposes only and Furya has no obligation to provide such features or functions. You
               acknowledge that you have not relied on any representations, promises, assurances or
               warranties that are not set forth in the Terms.
             </p>
 
             <p>
               You agree and acknowledge that there are risks associated with participating in
-              Nemeton, including, but not limited to, the risk of failure of hardware, software and
+              Praetoria, including, but not limited to, the risk of failure of hardware, software and
               internet connections, the risk of introduction of malware, loss of rewards and
-              security risks. You agree and acknowledge that OKP4 will not be responsible for any
+              security risks. You agree and acknowledge that Furya will not be responsible for any
               loss, failure, interruption, error, distortion, or delay that you may experience while
-              participating in the Testnet, however caused. OKP4 will not be responsible for any
+              participating in the Testnet, however caused. Furya will not be responsible for any
               loss and assumes no responsibility for and will not be liable to you for your
-              participation in Nemeton.
+              participation in Praetoria.
             </p>
 
             <p>
-              OKP4 does not warrant that Nemeton will meet your requirements or be available on an
-              uninterrupted, secure, error-free, or virus-free basis. OKP4 does not warrant the
+              Furya does not warrant that Praetoria will meet your requirements or be available on an
+              uninterrupted, secure, error-free, or virus-free basis. Furya does not warrant the
               quality, accuracy, timeliness, truthfulness, completeness or reliability of any
               information or materials offered in connection with the Testnet. Any rewards or
               incentives you receive (including tokens) in connection with the Testnet may be
@@ -491,7 +491,7 @@ const Terms: NextPage<TermsProps> = props => {
             <ul>
               <li>
                 <p>
-                  Access to Nemeton may require the use of your personal computer and/or mobile
+                  Access to Praetoria may require the use of your personal computer and/or mobile
                   devices, as well as communications with or use of data and storage on such
                   devices. You are responsible for any Internet or cell phone connection charges you
                   may incur in connection with your voluntary participation in Testnet.
@@ -506,7 +506,7 @@ const Terms: NextPage<TermsProps> = props => {
               </li>
               <li>
                 <p>
-                  Security and other blockchain audits undertaken by OKP4 or third parties will
+                  Security and other blockchain audits undertaken by Furya or third parties will
                   access user data and may result in loss of data or actions by telecommunications
                   and other third party service providers.
                 </p>
@@ -531,26 +531,26 @@ const Terms: NextPage<TermsProps> = props => {
 
             <p>
               The exclusions and limitations of damages set forth above are fundamental elements of
-              the basis of the agreement between OKP4 and you.
+              the basis of the agreement between Furya and you.
             </p>
             <li>
               <h2>Compensation</h2>
             </li>
             <p>
               To the fullest extent permitted by applicable law, you will indemnify, defend and hold
-              harmless OKP4 and our subsidiaries and affiliates, and each of our respective
+              harmless Furya and our subsidiaries and affiliates, and each of our respective
               officers, directors, agents, partners and employees (individually and collectively,
-              the &apos;OKP4 Parties&apos;) from and against any and all losses, liabilities,
+              the &apos;Furya Parties&apos;) from and against any and all losses, liabilities,
               claims, demands, damages, expenses or costs (&apos;Claims&apos;) arising out of or
-              relating to (i) your access to or use of the OKP4 Services or the Testnet; (ii) your
+              relating to (i) your access to or use of the Furya Services or the Testnet; (ii) your
               violation of these Terms; (iii) your violation, misappropriation or infringement of
               any rights of others (including intellectual property rights or privacy rights); or
-              (iv) your conduct in connection with the OKP4 Services or your participation in the
-              Testnet. You agree to promptly notify the OKP4 Parties of any third party claims, to
-              cooperate with the OKP4 Parties in the defence of such Claims, and to pay all fees,
+              (iv) your conduct in connection with the Furya Services or your participation in the
+              Testnet. You agree to promptly notify the Furya Parties of any third party claims, to
+              cooperate with the Furya Parties in the defence of such Claims, and to pay all fees,
               costs and expenses associated with the defence of such Claims (including
-              attorneys&apos; fees). You also agree that the OKP4 Parties shall have control over
-              the defence or settlement, in OKP4&apos;s sole discretion, of any third party claims.
+              attorneys&apos; fees). You also agree that the Furya Parties shall have control over
+              the defence or settlement, in Furya&apos;s sole discretion, of any third party claims.
             </p>
             <li>
               <h2>Privacy</h2>
@@ -559,7 +559,7 @@ const Terms: NextPage<TermsProps> = props => {
               As part of the Testnet, you may be entrusted with so-called Confidential Information,
               which will be clearly identified and notified as such. Accordingly, you may not
               reveal, publish, or otherwise disclose the Confidential Information to any third party
-              without OKP4&apos;s prior written consent, and you must protect the Confidential
+              without Furya&apos;s prior written consent, and you must protect the Confidential
               Information from disclosure using the same degree of care that you use to protect your
               own Confidential Information of the same nature, but in no event using less than
               reasonable care.
@@ -570,7 +570,7 @@ const Terms: NextPage<TermsProps> = props => {
             <p>
               These Terms and any action relating to them shall be governed by the laws of France,
               without regard to its conflict of law provisions. The exclusive jurisdiction for all
-              disputes (defined below) shall be Toulouse, and you and OKP4 each waive any objection
+              disputes (defined below) shall be Toulouse, and you and Furya each waive any objection
               to such jurisdiction and venue.
             </p>
             <li>
@@ -578,7 +578,7 @@ const Terms: NextPage<TermsProps> = props => {
             </li>
             <p>
               Please read the following section carefully, as it requires you to arbitrate certain
-              disputes and claims with OKP4 and limits the way you may obtain relief from us. No
+              disputes and claims with Furya and limits the way you may obtain relief from us. No
               class or representative action or arbitration is permitted under this arbitration
               provision. In addition, arbitration prevents you from filing a lawsuit or having a
               trial with a judge.
@@ -586,13 +586,13 @@ const Terms: NextPage<TermsProps> = props => {
 
             <p>
               (a) Binding Arbitration of Disputes. We both agree that any dispute, claim, or
-              controversy arising out of your participation in the Testnet, use of the OKP4 Services
+              controversy arising out of your participation in the Testnet, use of the Furya Services
               or these Terms or the breach, termination, performance, interpretation, or validity
               thereof (collectively, &apos;Disputes&apos;) shall be resolved solely by binding
               individual arbitration and not by any class, representative or consolidated action or
-              proceeding. You and OKP4 agree that the Chambre Arbitrale Internationale de Paris,
+              proceeding. You and Furya agree that the Chambre Arbitrale Internationale de Paris,
               France shall govern the interpretation and enforcement of these Terms, and that you
-              and OKP4 each waive the right to a trial by judge or to participate in a class action.
+              and Furya each waive the right to a trial by judge or to participate in a class action.
               This arbitration provision shall survive the termination of these Terms.
             </p>
 
@@ -646,7 +646,7 @@ const Terms: NextPage<TermsProps> = props => {
             </p>
 
             <p>
-              (f) Waiver of Class Action; Waiver of Trial by Judge. You and OKP4 agree that each may
+              (f) Waiver of Class Action; Waiver of Trial by Judge. You and Furya agree that each may
               bring Claims against the other only in your or his or her individual capacity, and not
               as a plaintiff or class member in any purported class or representative proceeding. In
               addition, if the parties&apos; Dispute is resolved by arbitration, the arbitrator may
@@ -679,7 +679,7 @@ const Terms: NextPage<TermsProps> = props => {
             </li>
             <p>
               Nothing herein shall constitute an employment, consulting, joint venture, or
-              partnership relationship between you and OKP4. If any provision of the Terms is found
+              partnership relationship between you and Furya. If any provision of the Terms is found
               by an arbitrator or court of competent jurisdiction to be invalid or unenforceable,
               that provision will be enforced to the maximum extent permissible, and the remaining
               provisions of the Terms will remain in full force and effect. These Terms reflect the
@@ -692,25 +692,25 @@ const Terms: NextPage<TermsProps> = props => {
 
             <p>
               Notices. Any notices or other communications provided by the Company under the Terms,
-              including those regarding changes to the Terms, may be given by posting on the OKP4
+              including those regarding changes to the Terms, may be given by posting on the Furya
               website, blog, or through other communications (such as forums, Telegram, Discord, or
               other channels).
             </p>
 
             <p>
-              Waiver of Rights. OKP4&apos;s failure to enforce any right or provision of these Terms
+              Waiver of Rights. Furya&apos;s failure to enforce any right or provision of these Terms
               shall not be deemed a waiver of such right or provision. A waiver of any such right or
               provision will be effective only if in writing and signed by a duly authorized
-              representative of OKP4. Except as expressly provided in these Terms, the exercise by
+              representative of Furya. Except as expressly provided in these Terms, the exercise by
               either party of any of its remedies under these Terms shall be without prejudice to
               its other remedies under these Terms or otherwise.
             </p>
 
             <p>
-              Contact Information. If you have any questions regarding these Terms or Nemeton,
+              Contact Information. If you have any questions regarding these Terms or Praetoria,
               please contact <a href={`mailto:${contact}`}>{contact}</a> or join us on our{' '}
               <a href={discordUrl} rel="noreferrer" target="_blank">
-                OKP4 Discord server
+                Furya Discord server
               </a>
               .
             </p>

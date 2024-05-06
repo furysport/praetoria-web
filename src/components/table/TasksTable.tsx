@@ -67,7 +67,7 @@ export const TasksTable: React.FC<TasksTableProps> = ({ data, phaseName }) => {
   )
 
   return (
-    <div className="okp4-nemeton-web-tasks-table-main">
+    <div className="furya-praetoria-web-tasks-table-main">
       <table>
         <thead>
           <tr>

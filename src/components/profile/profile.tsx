@@ -1,10 +1,10 @@
 import classNames from 'classnames'
 import React, { useCallback, useMemo } from 'react'
-import type { DruidProfile } from '../../entity/druid'
+import type { DragoonProfile } from '../../entity/dragoon'
 import { Copy } from '../copy/Copy'
 
 export type ProfileProps = Readonly<{
-  druidProfile: DruidProfile
+  dragoonProfile: DragoonProfile
   explorerUrl: string
   onValoperCopied: (valoper: string) => void
 }>
@@ -15,26 +15,26 @@ type ActionButton = Readonly<{
   disabled?: boolean
 }>
 
-export const Profile: React.FC<ProfileProps> = ({ druidProfile, explorerUrl, onValoperCopied }) => {
+export const Profile: React.FC<ProfileProps> = ({ dragoonProfile, explorerUrl, onValoperCopied }) => {
   const actionButtons: ActionButton[] = useMemo(
     () => [
       {
         label: 'website',
-        href: druidProfile.website,
-        disabled: !druidProfile.website
+        href: dragoonProfile.website,
+        disabled: !dragoonProfile.website
       },
       {
         label: 'explorer',
-        href: `${explorerUrl}${druidProfile.valoper}`,
+        href: `${explorerUrl}${dragoonProfile.valoper}`,
         disabled: false
       },
       {
         label: 'twitter',
-        href: `https://twitter.com/${druidProfile.twitter}`,
-        disabled: !druidProfile.twitter
+        href: `https://twitter.com/${dragoonProfile.twitter}`,
+        disabled: !dragoonProfile.twitter
       }
     ],
-    [druidProfile.twitter, druidProfile.valoper, druidProfile.website, explorerUrl]
+    [dragoonProfile.twitter, dragoonProfile.valoper, dragoonProfile.website, explorerUrl]
   )
 
   const openInNewTab = useCallback(
@@ -48,23 +48,23 @@ export const Profile: React.FC<ProfileProps> = ({ druidProfile, explorerUrl, onV
   )
 
   return (
-    <div className="okp4-nemeton-web-profile-main">
+    <div className="furya-praetoria-web-profile-main">
       <div
-        className="okp4-nemeton-web-profile-avatar"
-        style={{ backgroundImage: `url(${druidProfile.identity.avatar})` }}
+        className="furya-praetoria-web-profile-avatar"
+        style={{ backgroundImage: `url(${dragoonProfile.identity.avatar})` }}
       />
-      <div className="okp4-nemeton-web-profile-identity-container">
-        <h2>{druidProfile.identity.name}</h2>
-        <div className="okp4-nemeton-web-profile-identity-address-wrapper">
+      <div className="furya-praetoria-web-profile-identity-container">
+        <h2>{dragoonProfile.identity.name}</h2>
+        <div className="furya-praetoria-web-profile-identity-address-wrapper">
           <p>Address:</p>
-          <p>{druidProfile.valoper}</p>
-          <Copy item={druidProfile.valoper} onCopied={onValoperCopied} />
+          <p>{dragoonProfile.valoper}</p>
+          <Copy item={dragoonProfile.valoper} onCopied={onValoperCopied} />
         </div>
       </div>
-      <div className="okp4-nemeton-web-profile-actions-container">
+      <div className="furya-praetoria-web-profile-actions-container">
         {actionButtons.map(({ disabled, label, href }, index) => (
           <div
-            className={classNames(`okp4-nemeton-web-profile-action-button ${label}`, {
+            className={classNames(`furya-praetoria-web-profile-action-button ${label}`, {
               disabled
             })}
             key={index}

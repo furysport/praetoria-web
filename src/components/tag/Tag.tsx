@@ -6,8 +6,8 @@ type TagProps = Readonly<{
 }>
 
 export const Tag: React.FC<TagProps> = ({ status, content }) => (
-  <div className={`okp4-nemeton-web-tag-main ${status}`}>
-    <span className={`okp4-nemeton-web-tag-content ${status}`}>{content}</span>
-    <span className={`okp4-nemeton-web-tag-icon ${status}`} />
+  <div className={`furya-praetoria-web-tag-main ${status}`}>
+    <span className={`furya-praetoria-web-tag-content ${status}`}>{content}</span>
+    <span className={`furya-praetoria-web-tag-icon ${status}`} />
   </div>
 )

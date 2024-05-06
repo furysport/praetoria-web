@@ -47,7 +47,7 @@ main {
   color: $primary-white;
 }
 
-.okp4-nemeton-web-icon {
+.furya-praetoria-web-icon {
   cursor: pointer;
 
   &.rotate-down {
@@ -61,13 +61,13 @@ main {
   }
 }
 
-.okp4-nemeton-web-bold-text {
+.furya-praetoria-web-bold-text {
   font-family: 'Gotham', sans-serif;
   font-weight: 500;
 }
 
-.okp4-nemeton-web-page-main {
-  .okp4-nemeton-web-page-divider {
+.furya-praetoria-web-page-main {
+  .furya-praetoria-web-page-divider {
     border: 2px solid $primary-white;
     width: 371px;
 
@@ -77,7 +77,7 @@ main {
     }
   }
 
-  .okp4-nemeton-web-page-content-container {
+  .furya-praetoria-web-page-content-container {
     max-width: 1600px;
     padding: 10px 115px 30px;
     margin: auto;
@@ -189,12 +189,12 @@ main {
       }
     }
 
-    .okp4-nemeton-web-page-terms-update {
+    .furya-praetoria-web-page-terms-update {
       background-color: #2e534f;
       border-radius: 15px;
       padding: 0 20px 5px;
 
-      .okp4-nemeton-web-page-terms-update-title {
+      .furya-praetoria-web-page-terms-update-title {
         display: flex;
         gap: 10px;
 
@@ -217,7 +217,7 @@ main {
       @media screen and (max-width: 1000px) {
         padding: 5px 20px;
 
-        .okp4-nemeton-web-page-terms-update-title {
+        .furya-praetoria-web-page-terms-update-title {
           h3 {
             margin: 10px 0;
             line-height: 34px;
@@ -226,7 +226,7 @@ main {
       }
     }
 
-    .okp4-nemeton-web-tasks-accordion-title {
+    .furya-praetoria-web-tasks-accordion-title {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -260,12 +260,12 @@ main {
       }
     }
 
-    .okp4-nemeton-web-page-accordions-wrapper {
+    .furya-praetoria-web-page-accordions-wrapper {
       display: flex;
       flex-direction: column;
       gap: 10px;
 
-      .okp4-nemeton-web-page-accordions-title-container {
+      .furya-praetoria-web-page-accordions-title-container {
         display: flex;
         gap: 10px;
 
@@ -285,7 +285,7 @@ main {
   }
 }
 
-.okp4-nemeton-web-home-main {
+.furya-praetoria-web-home-main {
   display: flex;
   flex-direction: column;
   gap: 90px;
@@ -296,7 +296,7 @@ main {
   }
 }
 
-.okp4-nemeton-web-page-leaderboard-summary-container {
+.furya-praetoria-web-page-leaderboard-summary-container {
   display: flex;
   gap: 60px;
   letter-spacing: 0.04em;
@@ -311,7 +311,7 @@ main {
     margin-top: 23px;
   }
 
-  .okp4-nemeton-web-page-leaderboard-summary-card-title-container {
+  .furya-praetoria-web-page-leaderboard-summary-card-title-container {
     display: flex;
     align-items: baseline;
     gap: 10px;
@@ -324,7 +324,7 @@ main {
     }
   }
 
-  .okp4-nemeton-web-page-leaderboard-summary-card-title {
+  .furya-praetoria-web-page-leaderboard-summary-card-title {
     font-size: 61px !important;
 
     &.uppercase {
@@ -332,14 +332,14 @@ main {
     }
   }
 
-  .okp4-nemeton-web-page-leaderboard-summary-card-description {
+  .furya-praetoria-web-page-leaderboard-summary-card-description {
     font-size: 16px !important;
     margin: 0 !important;
     line-height: unset !important;
   }
 }
 
-.okp4-nemeton-web-page-leaderboard-main-container {
+.furya-praetoria-web-page-leaderboard-main-container {
   padding-top: 62px;
 
   @media screen and (max-width: 1000px) {
@@ -352,14 +352,14 @@ main {
       position: absolute;
       height: 100%;
       width: 100%;
-      background-image: url('/image/nemeton-medium-reversed.webp');
+      background-image: url('/image/praetoria-medium-reversed.webp');
       background-repeat: no-repeat;
       background-size: cover;
       left: 0;
     }
   }
 
-  .okp4-nemeton-web-page-leaderboard-main-wrapper {
+  .furya-praetoria-web-page-leaderboard-main-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -379,7 +379,7 @@ main {
       padding: 40px 20px;
     }
 
-    .okp4-nemeton-web-page-leaderboard-main-description {
+    .furya-praetoria-web-page-leaderboard-main-description {
       font-size: 16px;
       line-height: 20px;
       margin: 0;
@@ -392,7 +392,7 @@ main {
   }
 }
 
-.okp4-nemeton-web-go-back-button-container {
+.furya-praetoria-web-go-back-button-container {
   display: flex;
   align-items: center;
   gap: 7px;
@@ -410,7 +410,7 @@ main {
   }
 }
 
-.okp4-nemeton-web-copy-logo {
+.furya-praetoria-web-copy-logo {
   width: 18px;
   height: 18px;
   background-image: url('/icons/copy.svg');
@@ -419,7 +419,7 @@ main {
   cursor: pointer;
 }
 
-.okp4-nemeton-web-page-druid-main-container {
+.furya-praetoria-web-page-dragoon-main-container {
   display: flex;
   flex-direction: column;
   gap: 31px;
@@ -435,7 +435,7 @@ main {
   }
 }
 
-.okp4-nemeton-web-loader-container {
+.furya-praetoria-web-loader-container {
   display: flex;
   flex-direction: column;
   align-items: center;

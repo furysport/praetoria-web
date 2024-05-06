@@ -2,17 +2,17 @@ import type { PhasesConfig } from '../../types/config.type'
 import { getPhaseStatus } from '../../utils'
 import type { PhaseDTO } from './dto.type'
 
-export const lughnasad = ({
-  lughnasad: {
+export const imperium = ({
+  imperium: {
     startDate,
     endDate,
     urls: { logicModuleDocsUrl, gasConsumptionTypeformUrl, logicModuleTypeformUrl }
   }
 }: PhasesConfig): PhaseDTO => ({
   number: 4,
-  phaseName: 'lughnasad',
+  phaseName: 'imperium',
   phaseDescription:
-    'The fourth phase tests modules and smart contract performance. It will enable OKP4 to fine-tune the many custom developments and find inefficiencies and vulnerabilities to improve the code.',
+    'The fourth phase tests modules and smart contract performance. It will enable Furya to fine-tune the many custom developments and find inefficiencies and vulnerabilities to improve the code.',
   status: getPhaseStatus(startDate, endDate),
   phaseDuration: {
     from: startDate,
@@ -44,7 +44,7 @@ export const lughnasad = ({
           title: 'Judging Criteria',
           contentDescription: (
             <p>
-              You will receive the points once OKP4 team has checked your governance proposal vote
+              You will receive the points once Furya team has checked your governance proposal vote
               for the voting period.
             </p>
           )
@@ -91,7 +91,7 @@ export const lughnasad = ({
           title: 'Judging Criteria',
           contentDescription: (
             <p>
-              You will receive the points once OKP4 team has checked your governance proposal vote
+              You will receive the points once Furya team has checked your governance proposal vote
               for the chain upgrade regarding the logic module upgrade.
             </p>
           )
@@ -122,7 +122,7 @@ export const lughnasad = ({
           title: 'Description',
           contentDescription: (
             <p>
-              Once the software upgrade governance proposal is accepted, Druids need to perform the
+              Once the software upgrade governance proposal is accepted, Dragoons need to perform the
               update. To achieve this task you need to make sure your node is updated on time and
               doesn&apos;t miss blocks. The upgrade plan will be detailed in the governance
               proposal, the upgrade height will target approximately the Mar. 22th.
@@ -163,7 +163,7 @@ export const lughnasad = ({
     },
     {
       group: 'Community',
-      taskName: 'Tweet about OKP4',
+      taskName: 'Tweet about Furya',
       taskContent: [
         {
           id: 'description',
@@ -171,7 +171,7 @@ export const lughnasad = ({
           contentDescription: (
             <p>
               Publish a tweet including the{' '}
-              <span className="okp4-nemeton-web-bold-text">@OKP4_Protocol</span> tag using your
+              <span className="furya-praetoria-web-bold-text">@Furya_Protocol</span> tag using your
               validator Twitter account. Feel free to share your excitement about the new
               developments!
             </p>
@@ -186,7 +186,7 @@ export const lughnasad = ({
           id: 'criteria',
           title: 'Judging Criteria',
           contentDescription: (
-            <p>You will receive the points once OKP4 team has reviewed your tweet.</p>
+            <p>You will receive the points once Furya team has reviewed your tweet.</p>
           )
         },
         {
@@ -246,7 +246,7 @@ export const lughnasad = ({
           contentDescription: (
             <>
               <p>
-                OKP4 team will judge if any submission deserves points or not based on the
+                Furya team will judge if any submission deserves points or not based on the
                 following:
               </p>
               <ul>

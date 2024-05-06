@@ -13,16 +13,16 @@ const faqUrl = '/faq/#faq'
 const Support: NextPage<SupportProps> = props => {
   const { urls } = props
   const {
-    supportUrls: { discordNemetonUrl, discordTicketUrl },
+    supportUrls: { discordPraetoriaUrl, discordTicketUrl },
     docsUrls: { nodesUrl }
   } = urls
 
   return (
-    <div className="okp4-nemeton-web-page-main">
+    <div className="furya-praetoria-web-page-main">
       <Head {...props} />
       <main>
         <Header />
-        <div className="okp4-nemeton-web-page-content-container" id="support-page">
+        <div className="furya-praetoria-web-page-content-container" id="support-page">
           <h1>Support page</h1>
           <p>For any help please consult these links for answers:</p>
           <ul>
@@ -39,12 +39,12 @@ const Support: NextPage<SupportProps> = props => {
               </p>
             </li>
             <li>
-              <p>OKP4 Discord server:</p>
+              <p>Furya Discord server:</p>
               <ul>
                 <li>
                   <p>
-                    <a href={discordNemetonUrl} rel="noreferrer" target="_blank">
-                      Nemeton program
+                    <a href={discordPraetoriaUrl} rel="noreferrer" target="_blank">
+                      Praetoria program
                     </a>
                   </p>
                 </li>

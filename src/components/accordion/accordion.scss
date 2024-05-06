@@ -1,4 +1,4 @@
-.okp4-nemeton-web-accordion-main {
+.furya-praetoria-web-accordion-main {
   &.secondary {
     width: calc(100% - 60px);
     background: #1f403c;
@@ -17,7 +17,7 @@
     border: 1px solid rgba(255, 255, 255, 0.12);
   }
 
-  .okp4-nemeton-web-accordion-title-container {
+  .furya-praetoria-web-accordion-title-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -43,7 +43,7 @@
       }
     }
 
-    .okp4-nemeton-web-accordion-content {
+    .furya-praetoria-web-accordion-content {
       width: 88%;
       margin: auto;
     }

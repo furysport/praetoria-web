@@ -1,6 +1,6 @@
 $action-buttons: ('website', 'explorer', 'twitter');
 
-.okp4-nemeton-web-profile-main {
+.furya-praetoria-web-profile-main {
   @include with-gradient-container;
   height: 204px;
   margin-top: 54px;
@@ -17,7 +17,7 @@ $action-buttons: ('website', 'explorer', 'twitter');
     padding-bottom: 30px;
   }
 
-  .okp4-nemeton-web-profile-avatar {
+  .furya-praetoria-web-profile-avatar {
     height: 209px;
     width: 209px;
     background-size: contain;
@@ -28,7 +28,7 @@ $action-buttons: ('website', 'explorer', 'twitter');
     box-shadow: 0 0 36px 0 rgba(31, 64, 60, 0.7);
   }
 
-  .okp4-nemeton-web-profile-identity-container {
+  .furya-praetoria-web-profile-identity-container {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -44,7 +44,7 @@ $action-buttons: ('website', 'explorer', 'twitter');
       letter-spacing: 0;
     }
 
-    .okp4-nemeton-web-profile-identity-address-wrapper {
+    .furya-praetoria-web-profile-identity-address-wrapper {
       display: flex;
       align-items: center;
       gap: 5px;
@@ -80,7 +80,7 @@ $action-buttons: ('website', 'explorer', 'twitter');
     }
   }
 
-  .okp4-nemeton-web-profile-actions-container {
+  .furya-praetoria-web-profile-actions-container {
     display: flex;
     gap: 12px;
     margin-top: 29px;
@@ -89,7 +89,7 @@ $action-buttons: ('website', 'explorer', 'twitter');
       margin-top: unset;
     }
 
-    .okp4-nemeton-web-profile-action-button {
+    .furya-praetoria-web-profile-action-button {
       width: 40px;
       height: 40px;
       border-radius: 8px;

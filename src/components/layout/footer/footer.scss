@@ -1,4 +1,4 @@
-.okp4-nemeton-web-footer-container {
+.furya-praetoria-web-footer-container {
   display: flex;
   justify-content: center;
   width: calc(100% - 244px);
@@ -22,7 +22,7 @@
     padding: 120px 122px;
   }
 
-  .okp4-nemeton-web-footer-content {
+  .furya-praetoria-web-footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +58,7 @@
       }
     }
 
-    .okp4-nemeton-web-footer-links-container {
+    .furya-praetoria-web-footer-links-container {
       display: flex;
       justify-content: space-between;
 
@@ -66,16 +66,16 @@
         text-decoration: unset;
       }
 
-      .okp4-nemeton-web-footer-links-divider {
+      .furya-praetoria-web-footer-links-divider {
         border-left: 1px solid white;
       }
     }
 
-    .okp4-nemeton-web-footer-socials-media-container {
+    .furya-praetoria-web-footer-socials-media-container {
       display: flex;
       gap: 8px;
 
-      .okp4-nemeton-web-footer-socials-media-icon {
+      .furya-praetoria-web-footer-socials-media-icon {
         cursor: pointer;
 
         &:hover {

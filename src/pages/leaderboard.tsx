@@ -11,7 +11,7 @@ import { config } from '../lib/config'
 import type { Config } from '../types/config.type'
 import { LeaderboardTable } from '../components/table/LeaderboardTable'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
-import type { DruidDescriptor, PodiumDruid } from '../entity/druid'
+import type { DragoonDescriptor, PodiumDragoon } from '../entity/dragoon'
 import type { PhaseDescriptor } from '../entity/phase'
 import {
   useQBoardPodiumQuery,
@@ -22,17 +22,17 @@ import {
 import { Snackbar } from '../components/snackbar/Snackbar'
 import { Countdown } from '../components/countdown/Countdown'
 import {
-  mapValidatorEdgeDTOToDruid,
-  mapPodiumValidatorEdgeDTOToPodiumDruid
+  mapValidatorEdgeDTOToDragoon,
+  mapPodiumValidatorEdgeDTOToPodiumDragoon
 } from '../graphql/dto/mapper'
 import client from '../graphql/apolloClient'
 
 export type LeaderboardProps = Pick<Config, 'title' | 'keywords' | 'description' | 'urls'>
 
 const Leaderboard: NextPage<LeaderboardProps> = props => {
-  const [druids, setDruids] = useState<DruidDescriptor[]>([])
-  const [podium, setPodium] = useState<PodiumDruid[]>([])
-  const [druidCount, setDruidCount] = useState<number>(0)
+  const [dragoons, setDragoons] = useState<DragoonDescriptor[]>([])
+  const [podium, setPodium] = useState<PodiumDragoon[]>([])
+  const [dragoonCount, setDragoonCount] = useState<number>(0)
   const [activePhase, setActivePhase] = useState<PhaseDescriptor | null>(null)
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const [isSearchMode, setSearchMode] = useState<boolean>(false)
@@ -44,14 +44,14 @@ const Leaderboard: NextPage<LeaderboardProps> = props => {
     fetchPolicy: 'network-only',
     variables: { first: 3 },
     client: gqlClient,
-    onCompleted: data => setPodium(data.board.edges.map(mapPodiumValidatorEdgeDTOToPodiumDruid))
+    onCompleted: data => setPodium(data.board.edges.map(mapPodiumValidatorEdgeDTOToPodiumDragoon))
   })
 
   const { error: validatorCountError, loading: validatorCountLoading } = useQValidatorCountQuery({
     notifyOnNetworkStatusChange: true,
     fetchPolicy: 'network-only',
     client: gqlClient,
-    onCompleted: data => setDruidCount(data.validatorCount)
+    onCompleted: data => setDragoonCount(data.validatorCount)
   })
 
   const {
@@ -65,10 +65,10 @@ const Leaderboard: NextPage<LeaderboardProps> = props => {
     fetchPolicy: 'network-only',
     client: gqlClient,
     onCompleted: data => {
-      const newData = data.board.edges.map(mapValidatorEdgeDTOToDruid)
+      const newData = data.board.edges.map(mapValidatorEdgeDTOToDragoon)
       isSearchMode && !variables?.after
-        ? setDruids(newData)
-        : setDruids(prev => [...prev, ...newData])
+        ? setDragoons(newData)
+        : setDragoons(prev => [...prev, ...newData])
     }
   })
 
@@ -85,7 +85,7 @@ const Leaderboard: NextPage<LeaderboardProps> = props => {
 
   useEffect(() => {
     if (validatorCountError || phaseError || boardError || boardPodiumError)
-      setErrorMessage('Oops... Druids could not be properly retrieved... Please try again later.')
+      setErrorMessage('Oops... Dragoons could not be properly retrieved... Please try again later.')
   }, [validatorCountError, phaseError, boardError, boardPodiumError])
 
   const handleSearchChange = useCallback(
@@ -100,7 +100,7 @@ const Leaderboard: NextPage<LeaderboardProps> = props => {
     [boardReftech]
   )
 
-  const fetchMoreDruids = useCallback(() => {
+  const fetchMoreDragoons = useCallback(() => {
     const lastCursor = boardData?.board.pageInfo.endCursor
     !boardLoading && boardReftech({ after: lastCursor })
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
@@ -109,30 +109,30 @@ const Leaderboard: NextPage<LeaderboardProps> = props => {
   const summaryCards: Array<Omit<BaseCardProps, 'loading'> | null> = useMemo(
     () => [
       {
-        ...(druidCount && {
+        ...(dragoonCount && {
           title: (
-            <h1 className="okp4-nemeton-web-page-leaderboard-summary-card-title">{druidCount}</h1>
+            <h1 className="furya-praetoria-web-page-leaderboard-summary-card-title">{dragoonCount}</h1>
           )
         }),
         description: (
-          <p className="okp4-nemeton-web-page-leaderboard-summary-card-description">
-            {!druidCount ? 'Druids are getting ready to participate...' : 'Active druids'}
+          <p className="furya-praetoria-web-page-leaderboard-summary-card-description">
+            {!dragoonCount ? 'Dragoons are getting ready to participate...' : 'Active dragoons'}
           </p>
         ),
-        disabled: !druidCount,
-        disabledBackgroundImageUrl: '/icons/druid-staff.svg'
+        disabled: !dragoonCount,
+        disabledBackgroundImageUrl: '/icons/dragoon-staff.svg'
       },
       activePhase && {
         title: (
-          <div className="okp4-nemeton-web-page-leaderboard-summary-card-title-container">
-            <h2 className="okp4-nemeton-web-page-leaderboard-summary-card-title">{`Phase ${activePhase.number}`}</h2>
-            <h1 className="okp4-nemeton-web-page-leaderboard-summary-card-title uppercase">
+          <div className="furya-praetoria-web-page-leaderboard-summary-card-title-container">
+            <h2 className="furya-praetoria-web-page-leaderboard-summary-card-title">{`Phase ${activePhase.number}`}</h2>
+            <h1 className="furya-praetoria-web-page-leaderboard-summary-card-title uppercase">
               {activePhase.name}
             </h1>
           </div>
         ),
         description: (
-          <p className="okp4-nemeton-web-page-leaderboard-summary-card-description">
+          <p className="furya-praetoria-web-page-leaderboard-summary-card-description">
             Current phase name
           </p>
         ),
@@ -141,13 +141,13 @@ const Leaderboard: NextPage<LeaderboardProps> = props => {
       {
         ...(activePhase && {
           title: (
-            <div className="okp4-nemeton-web-page-leaderboard-summary-card-title">
+            <div className="furya-praetoria-web-page-leaderboard-summary-card-title">
               <Countdown countdownEndDate={activePhase.endDate} />
             </div>
           )
         }),
         description: (
-          <p className="okp4-nemeton-web-page-leaderboard-summary-card-description">
+          <p className="furya-praetoria-web-page-leaderboard-summary-card-description">
             {activePhase
               ? 'Before the end of the current phase'
               : 'Imminent take-off of the phase.'}
@@ -157,31 +157,31 @@ const Leaderboard: NextPage<LeaderboardProps> = props => {
         disabledBackgroundImageUrl: '/icons/flame.svg'
       }
     ],
-    [activePhase, druidCount]
+    [activePhase, dragoonCount]
   )
 
   const podiumSteps: PodiumStep[] = useMemo(
     () =>
       podium.map(
-        (druid: PodiumDruid): PodiumStep => ({
-          rank: druid.rank,
-          legend: druid.identity.name,
-          backgroundImageUrl: druid.identity.avatar
+        (dragoon: PodiumDragoon): PodiumStep => ({
+          rank: dragoon.rank,
+          legend: dragoon.identity.name,
+          backgroundImageUrl: dragoon.identity.avatar
         })
       ),
     [podium]
   )
 
   return (
-    <div className="okp4-nemeton-web-page-main">
+    <div className="furya-praetoria-web-page-main">
       <Head {...props} />
       <main>
         <Header />
-        <div className="okp4-nemeton-web-page-content-container" id="leaderboard">
+        <div className="furya-praetoria-web-page-content-container" id="leaderboard">
           <h1>Leaderboard</h1>
-          <div className="okp4-nemeton-web-page-divider" />
-          <p className="center">Welcome to the Nemeton Leaderboard!</p>
-          <div className="okp4-nemeton-web-page-leaderboard-summary-container">
+          <div className="furya-praetoria-web-page-divider" />
+          <p className="center">Welcome to the Praetoria Leaderboard!</p>
+          <div className="furya-praetoria-web-page-leaderboard-summary-container">
             {validatorCountLoading || phaseLoading
               ? [...Array(3)].map((_elt, index) => <BaseCard key={index} loading />)
               : summaryCards
@@ -197,23 +197,23 @@ const Leaderboard: NextPage<LeaderboardProps> = props => {
                     />
                   ))}
           </div>
-          <div className="okp4-nemeton-web-page-leaderboard-main-container">
-            <div className="okp4-nemeton-web-page-leaderboard-main-wrapper">
-              <p className="okp4-nemeton-web-page-leaderboard-main-description">
-                Here you can check the points earned by all the druids. Complete more tasks to
+          <div className="furya-praetoria-web-page-leaderboard-main-container">
+            <div className="furya-praetoria-web-page-leaderboard-main-wrapper">
+              <p className="furya-praetoria-web-page-leaderboard-main-description">
+                Here you can check the points earned by all the dragoons. Complete more tasks to
                 become the leader!
               </p>
               {podium.length > 0 && <Podium steps={podiumSteps} />}
               <InfiniteScroll
-                dataLength={druids.length}
+                dataLength={dragoons.length}
                 hasMore={!boardLoading && !!boardData?.board.pageInfo.hasNextPage}
                 loader={null}
-                next={fetchMoreDruids}
+                next={fetchMoreDragoons}
                 scrollThreshold={0.91}
                 style={{ overflow: 'unset' }}
               >
                 <LeaderboardTable
-                  data={druids}
+                  data={dragoons}
                   loading={boardLoading && !variables?.after}
                   loadingMore={boardLoading && !!variables?.after}
                   onSearchChange={handleSearchChange}

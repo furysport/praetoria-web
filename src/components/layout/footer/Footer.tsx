@@ -54,17 +54,17 @@ export const Footer: React.FC<FooterProps> = ({ urls }): JSX.Element => {
   const iconSize = isLargeScreen ? 50 : 28
 
   return (
-    <div className="okp4-nemeton-web-footer-container">
-      <div className="okp4-nemeton-web-footer-content">
+    <div className="furya-praetoria-web-footer-container">
+      <div className="furya-praetoria-web-footer-content">
         <a href={websiteUrl} rel="noreferrer" target="_blank">
           <Image
-            alt="okp4-mobile-logo"
+            alt="furya-mobile-logo"
             height={isMobileScreen ? 42 : 85}
-            src="/image/okp4-logo-mobile.svg"
+            src="/image/furya-logo-mobile.svg"
             width={isMobileScreen ? 150 : 305}
           />
         </a>
-        <div className="okp4-nemeton-web-footer-links-container">
+        <div className="furya-praetoria-web-footer-links-container">
           {footerRoutes.map(({ name, path, hash }: Route) => (
             <React.Fragment key={path}>
               <Link href={hash ? `${path}${hash}` : path}>
@@ -72,19 +72,19 @@ export const Footer: React.FC<FooterProps> = ({ urls }): JSX.Element => {
                   {name}
                 </h2>
               </Link>
-              <div className="okp4-nemeton-web-footer-links-divider" />
+              <div className="furya-praetoria-web-footer-links-divider" />
             </React.Fragment>
           ))}
           <a className="link-label" href={docsUrls.whitepaperUrl} rel="noreferrer" target="_blank">
             Whitepaper
           </a>
         </div>
-        <div className="okp4-nemeton-web-footer-socials-media-container">
+        <div className="furya-praetoria-web-footer-socials-media-container">
           {socialMedias.map((socialMedia: SocialMedia) => (
             <a href={socialMedia.url} key={socialMedia.url} rel="noreferrer" target="_blank">
               <Image
                 alt={`${socialMedia.label}-link`}
-                className="okp4-nemeton-web-footer-socials-media-icon"
+                className="furya-praetoria-web-footer-socials-media-icon"
                 height={iconSize}
                 src={`/icons/${socialMedia.label}-round-dark.svg`}
                 width={iconSize}

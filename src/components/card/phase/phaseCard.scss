@@ -1,8 +1,8 @@
-.okp4-nemeton-web-phase-card-main {
+.furya-praetoria-web-phase-card-main {
   display: flex;
   flex-direction: column;
 
-  .okp4-nemeton-web-phase-card-content-button-container {
+  .furya-praetoria-web-phase-card-content-button-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -17,7 +17,7 @@
       margin-left: unset;
     }
 
-    .okp4-nemeton-web-phase-card-button {
+    .furya-praetoria-web-phase-card-button {
       max-width: 350px;
       border: 2px solid white;
       background-color: transparent;
@@ -50,7 +50,7 @@
     }
   }
 
-  .okp4-nemeton-web-phase-card-container {
+  .furya-praetoria-web-phase-card-container {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -70,31 +70,31 @@
       background-size: contain;
     }
 
-    &.imbolc {
+    &.munitio {
       @media screen and (max-width: 580px) {
-        background-image: url('/image/imbolc-mobile.webp');
+        background-image: url('/image/munitio-mobile.webp');
       }
     }
 
-    &.sidh {
+    &.fundamen {
       @media screen and (max-width: 580px) {
-        background-image: url('/image/sidh-mobile.webp');
+        background-image: url('/image/fundamen-mobile.webp');
       }
     }
 
-    &.beltaine {
+    &.dilatatio {
       @media screen and (max-width: 580px) {
-        background-image: url('/image/beltaine-mobile.webp');
+        background-image: url('/image/dilatatio-mobile.webp');
       }
     }
 
-    &.lughnasad {
+    &.imperium {
       @media screen and (max-width: 580px) {
-        background-image: url('/image/lughnasad-mobile.webp');
+        background-image: url('/image/imperium-mobile.webp');
       }
     }
 
-    .okp4-nemeton-web-phase-card-content-container {
+    .furya-praetoria-web-phase-card-content-container {
       max-width: 1312px;
       width: 100%;
       min-width: 1170px;
@@ -109,36 +109,36 @@
         border: unset;
       }
 
-      &.imbolc {
-        background-image: url('/image/imbolc-large.webp');
+      &.munitio {
+        background-image: url('/image/munitio-large.webp');
         background-position: left;
         background-size: contain;
         @media screen and (min-width: 581px) and (max-width: 1920px) {
-          background-image: url('/image/imbolc-medium.webp');
+          background-image: url('/image/munitio-medium.webp');
         }
         @media screen and (max-width: 900px) {
           background-size: cover;
         }
       }
 
-      &.lughnasad {
-        background-image: url('/image/lughnasad-large.webp');
+      &.imperium {
+        background-image: url('/image/imperium-large.webp');
         background-position: left;
         background-size: contain;
         @media screen and (min-width: 581px) and (max-width: 1920px) {
-          background-image: url('/image/lughnasad-medium.webp');
+          background-image: url('/image/imperium-medium.webp');
         }
         @media screen and (max-width: 900px) {
           background-size: cover;
         }
       }
 
-      &.beltaine {
-        background-image: url('/image/beltaine-large.webp');
+      &.dilatatio {
+        background-image: url('/image/dilatatio-large.webp');
         background-position: right;
         background-size: auto;
         @media screen and (min-width: 581px) and (max-width: 1920px) {
-          background-image: url('/image/beltaine-medium.webp');
+          background-image: url('/image/dilatatio-medium.webp');
         }
         @media screen and (max-width: 900px) {
           background-size: cover;
@@ -148,12 +148,12 @@
         }
       }
 
-      &.sidh {
-        background-image: url('/image/sidh-large.webp');
+      &.fundamen {
+        background-image: url('/image/fundamen-large.webp');
         background-position: right;
         background-size: contain;
         @media screen and (min-width: 581px) and (max-width: 1920px) {
-          background-image: url('/image/sidh-medium.webp');
+          background-image: url('/image/fundamen-medium.webp');
         }
         @media screen and (max-width: 900px) {
           background-size: cover;
@@ -161,7 +161,7 @@
       }
 
       @media screen and (min-width: 2125px) {
-        background-image: url('/image/sidh.webp');
+        background-image: url('/image/fundamen.webp');
         background-position: right;
         background-repeat: no-repeat;
       }
@@ -181,7 +181,7 @@
         min-width: unset;
       }
 
-      .okp4-nemeton-web-phase-card-mask-container {
+      .furya-praetoria-web-phase-card-mask-container {
         position: absolute;
         background-color: #2e534f;
         width: 100%;
@@ -209,7 +209,7 @@
           }
         }
 
-        .okp4-nemeton-web-phase-card-mask-divider {
+        .furya-praetoria-web-phase-card-mask-divider {
           width: 100px;
           border-top: 3px solid white;
           @media screen and (max-width: 900px) {
@@ -218,7 +218,7 @@
         }
       }
 
-      .okp4-nemeton-web-phase-card-content-details {
+      .furya-praetoria-web-phase-card-content-details {
         padding: 20px 0 0 45px;
         display: flex;
         flex-direction: column;
@@ -231,8 +231,8 @@
           align-items: center;
         }
 
-        &.imbolc,
-        &.lughnasad {
+        &.munitio,
+        &.imperium {
           @media screen and (min-width: 901px) {
             align-items: flex-end;
             padding: 20px 45px 0 0;
@@ -259,7 +259,7 @@
         }
       }
 
-      .okp4-nemeton-web-phase-card-content-title {
+      .furya-praetoria-web-phase-card-content-title {
         display: flex;
         align-items: baseline;
         @media screen and (max-width: 580px) {

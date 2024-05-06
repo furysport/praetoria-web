@@ -23,15 +23,15 @@ export const TasksSummary: React.FC<TasksSummaryProps> = ({ tasksPerPhase, point
   )
 
   return (
-    <div className="okp4-nemeton-web-tasks-summary-main">
-      <div className="okp4-nemeton-web-tasks-summary-header-container">
+    <div className="furya-praetoria-web-tasks-summary-main">
+      <div className="furya-praetoria-web-tasks-summary-header-container">
         <h2>tasks and challenges</h2>
-        <div className="okp4-nemeton-web-tasks-summary-header-points-wrapper">
+        <div className="furya-praetoria-web-tasks-summary-header-points-wrapper">
           <p>{points > 0 ? points.toLocaleString() : 0}</p>
           <p>points earned</p>
         </div>
       </div>
-      <div className="okp4-nemeton-web-tasks-summary-content-container">
+      <div className="furya-praetoria-web-tasks-summary-content-container">
         {tasksPerPhase.map(({ phase }, index) => (
           <Accordion
             content={<TasksTable data={phase.tasks} phaseName={phase.name} />}
@@ -42,7 +42,7 @@ export const TasksSummary: React.FC<TasksSummaryProps> = ({ tasksPerPhase, point
             onToggle={handleClick(index)}
             title={
               <div
-                className={classNames('okp4-nemeton-web-tasks-summary-accordion-title-wrapper', {
+                className={classNames('furya-praetoria-web-tasks-summary-accordion-title-wrapper', {
                   disabled: !phase.started
                 })}
               >

@@ -1,4 +1,4 @@
-.okp4-nemeton-web-phase-dropdown-main {
+.furya-praetoria-web-phase-dropdown-main {
   display: flex;
   width: 100%;
   height: 100%;
@@ -11,7 +11,7 @@
     margin-top: 40px;
   }
 
-  .okp4-nemeton-web-phase-dropdown-container {
+  .furya-praetoria-web-phase-dropdown-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -23,7 +23,7 @@
       padding: 20px;
     }
 
-    .okp4-nemeton-web-phase-dropdown-clear-icon {
+    .furya-praetoria-web-phase-dropdown-clear-icon {
       font-size: 32px !important;
       cursor: pointer;
       order: 4;
@@ -34,7 +34,7 @@
       }
     }
 
-    .okp4-nemeton-web-phase-dropdown-duration {
+    .furya-praetoria-web-phase-dropdown-duration {
       display: flex;
       height: 105px;
       background-color: #1f403c;
@@ -61,7 +61,7 @@
       }
     }
 
-    .okp4-nemeton-web-phase-dropdown-tasks {
+    .furya-praetoria-web-phase-dropdown-tasks {
       display: flex;
       flex-direction: column;
 
@@ -70,7 +70,7 @@
         height: unset;
       }
 
-      .okp4-nemeton-web-phase-dropdown-details-container {
+      .furya-praetoria-web-phase-dropdown-details-container {
         align-self: flex-end;
         margin-top: 40px;
         display: flex;
@@ -88,7 +88,7 @@
         }
       }
 
-      .okp4-nemeton-web-phase-dropdown-task {
+      .furya-praetoria-web-phase-dropdown-task {
         > h3 {
           font-size: 50px;
           letter-spacing: 2px;
@@ -105,7 +105,7 @@
           }
         }
 
-        .okp4-nemeton-web-phase-dropdown-reward {
+        .furya-praetoria-web-phase-dropdown-reward {
           display: flex;
           justify-content: space-between;
           gap: 20px;

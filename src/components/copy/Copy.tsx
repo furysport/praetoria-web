@@ -12,7 +12,7 @@ export const Copy: React.FC<CopyProps> = ({ onCopied, item }) => {
   }, [item, onCopied])
   return (
     <span
-      className="okp4-nemeton-web-copy-logo"
+      className="furya-praetoria-web-copy-logo"
       onClick={handleCopyAddress}
       title="Copy on clipboard"
     />

@@ -23,7 +23,7 @@ export const Head: React.FC<HeadProps> = ({ description, title, keywords }): JSX
       <meta content={keywords} name="keywords" />
       <meta content={publicRuntimeConfig.version} name="version" />
       <meta content={description} name="description" />
-      <link href="/okp4-logo.png" rel="icon" />
+      <link href="/furya-logo.png" rel="icon" />
     </HtmlHead>
   )
 }

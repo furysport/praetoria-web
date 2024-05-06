@@ -1,12 +1,12 @@
 @import 'src/variables.scss';
 
-.okp4-nemeton-web-header-main {
+.furya-praetoria-web-header-main {
   display: grid;
   grid-template: repeat(3, auto) / repeat(2, auto);
   width: 100%;
   padding-top: 230px;
   column-gap: 260px;
-  background-image: url('/image/nemeton-large.webp');
+  background-image: url('/image/praetoria-large.webp');
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
   }
 
   @media screen and (min-width: 581px) and (max-width: 1440px) {
-    background-image: url('/image/nemeton-medium.webp');
+    background-image: url('/image/praetoria-medium.webp');
     padding: 50px 0 150px;
     background-size: auto;
   }
@@ -31,12 +31,12 @@
   }
 
   @media screen and (max-width: 580px) {
-    background-image: url('/image/nemeton-mobile.webp');
+    background-image: url('/image/praetoria-mobile.webp');
     padding: 50px 0 223px;
     row-gap: 0 !important;
   }
 
-  .okp4-nemeton-web-header-title-container {
+  .furya-praetoria-web-header-title-container {
     grid-area: 1 / 1 / 3 / 1;
     max-width: 390px;
     justify-self: end;
@@ -74,7 +74,7 @@
     }
   }
 
-  .okp4-nemeton-web-header-divider {
+  .furya-praetoria-web-header-divider {
     grid-area: 3 / 1 / 3 / 1;
     width: 380px;
     border-top: 2px solid white;
@@ -87,7 +87,7 @@
     }
   }
 
-  .okp4-nemeton-web-header-logo-container {
+  .furya-praetoria-web-header-logo-container {
     grid-area: 1 / 2 / 1 / 2;
     position: relative;
     @media screen and (max-width: 1440px) {
@@ -101,7 +101,7 @@
     }
   }
 
-  .okp4-nemeton-web-header-description-container {
+  .furya-praetoria-web-header-description-container {
     grid-area: 2 / 2 / 3 / 3;
     max-width: 360px;
     text-align: center;
@@ -137,7 +137,7 @@
     }
   }
 
-  .okp4-nemeton-web-header-links-container {
+  .furya-praetoria-web-header-links-container {
     grid-area: 3 / 1 / 3 / 3;
     display: flex;
     justify-self: center;
@@ -175,7 +175,7 @@
     }
   }
 
-  .okp4-nemeton-web-header-links-mobile-container {
+  .furya-praetoria-web-header-links-mobile-container {
     grid-area: 1/2/1/2;
     display: flex;
     justify-content: center;
@@ -188,7 +188,7 @@
       align-items: center;
     }
 
-    .okp4-nemeton-web-header-links-mobile-burger-menu {
+    .furya-praetoria-web-header-links-mobile-burger-menu {
       &.rotate-down {
         transform: rotate(90deg);
         transition: transform 0.1s linear;
@@ -200,7 +200,7 @@
       }
     }
 
-    .okp4-nemeton-web-header-mobile-menu-links {
+    .furya-praetoria-web-header-mobile-menu-links {
       opacity: 0;
       visibility: hidden;
       position: absolute;
@@ -233,7 +233,7 @@
       }
     }
 
-    .okp4-nemeton-web-header-mobile-links-divider {
+    .furya-praetoria-web-header-mobile-links-divider {
       margin: 10px;
       width: 100px;
       border-top: 1px solid white;

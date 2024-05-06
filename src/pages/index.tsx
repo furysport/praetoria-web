@@ -18,7 +18,7 @@ const Home: NextPage<HomeProps> = props => {
       <Head {...props} />
       <main>
         <Header />
-        <div className="okp4-nemeton-web-home-main" id="home">
+        <div className="furya-praetoria-web-home-main" id="home">
           {Object.values(Phases(phases)).map(
             ({ tasks, phaseDescription, phaseName, status, number, phaseDuration }: PhaseDTO) => (
               <div key={number}>

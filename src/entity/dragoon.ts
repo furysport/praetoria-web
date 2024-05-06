@@ -2,7 +2,7 @@ import type { TasksPerPhase } from './phase'
 
 type Valoper = string
 
-export type DruidDescriptor = Readonly<{
+export type DragoonDescriptor = Readonly<{
   rank: number
   identity: {
     avatar: string
@@ -16,16 +16,16 @@ export type DruidDescriptor = Readonly<{
   points: number
 }>
 
-export type PodiumDruid = Pick<DruidDescriptor, 'rank' | 'identity'>
+export type PodiumDragoon = Pick<DragoonDescriptor, 'rank' | 'identity'>
 
-export type DruidProfile = Readonly<
-  Pick<DruidDescriptor, 'identity' | 'valoper' | 'points'> & {
+export type DragoonProfile = Readonly<
+  Pick<DragoonDescriptor, 'identity' | 'valoper' | 'points'> & {
     website: string | null
     twitter: string | null
   }
 >
 
-export type Druid = Readonly<{
-  profile: DruidProfile
+export type Dragoon = Readonly<{
+  profile: DragoonProfile
   tasksPerPhase: TasksPerPhase[]
 }>

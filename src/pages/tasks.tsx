@@ -73,8 +73,8 @@ const PhaseAccordions: React.FC<PhaseAccordionProps> = ({
   onClick,
   number
 }): JSX.Element => (
-  <div className="okp4-nemeton-web-page-accordions-wrapper">
-    <div className="okp4-nemeton-web-page-accordions-title-container">
+  <div className="furya-praetoria-web-page-accordions-wrapper">
+    <div className="furya-praetoria-web-page-accordions-title-container">
       <h3>Phase {number}</h3>
       <h2 id={phaseName.toLowerCase()}>
         {phaseName}
@@ -84,7 +84,7 @@ const PhaseAccordions: React.FC<PhaseAccordionProps> = ({
     {tasks.map(({ taskName, taskContent, taskDuration }, index) => {
       const { from, to } = taskDuration
       const title = (
-        <div className="okp4-nemeton-web-tasks-accordion-title">
+        <div className="furya-praetoria-web-tasks-accordion-title">
           <h3>{taskName}</h3>
           <p>{`${moment(from).utc().format('MMM. Do, H:mm ')} UTC - ${moment(to)
             .utc()
@@ -142,11 +142,11 @@ const Tasks: NextPage<TasksProps> = props => {
   }, [query, setActiveTask])
 
   return (
-    <div className="okp4-nemeton-web-page-main">
+    <div className="furya-praetoria-web-page-main">
       <Head {...props} />
       <main>
         <Header />
-        <div className="okp4-nemeton-web-page-content-container" id="tasks">
+        <div className="furya-praetoria-web-page-content-container" id="tasks">
           <h1>Tasks</h1>
           {[...Phases(phases)].reverse().map(
             ({ number, phaseName, tasks, status }: PhaseDTO, index) =>

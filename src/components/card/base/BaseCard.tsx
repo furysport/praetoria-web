@@ -21,7 +21,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
   backgroundImageUrl
 }) =>
   loading ? (
-    <div className="okp4-nemeton-web-base-card-main">
+    <div className="furya-praetoria-web-base-card-main">
       <Skeleton
         height={45}
         sx={{ bgcolor: 'rgba(255, 255, 255, 0.13)', borderRadius: '10px' }}
@@ -48,22 +48,22 @@ export const BaseCard: React.FC<BaseCardProps> = ({
       {backgroundImageUrl && (
         <Image
           alt="background-image"
-          className="okp4-nemeton-web-base-card-bg-image"
+          className="furya-praetoria-web-base-card-bg-image"
           fill
           sizes="100%"
           src={backgroundImageUrl}
         />
       )}
       <div
-        className={classNames('okp4-nemeton-web-base-card-main', { disabled })}
+        className={classNames('furya-praetoria-web-base-card-main', { disabled })}
         style={{
           backgroundImage:
             disabled && disabledBackgroundImageUrl ? `url(${disabledBackgroundImageUrl})` : 'none'
         }}
       >
-        {title && <div className="okp4-nemeton-web-base-card-title-container">{title}</div>}
+        {title && <div className="furya-praetoria-web-base-card-title-container">{title}</div>}
         {description && (
-          <div className="okp4-nemeton-web-base-card-description-container">{description}</div>
+          <div className="furya-praetoria-web-base-card-description-container">{description}</div>
         )}
       </div>
     </div>

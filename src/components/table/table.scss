@@ -1,6 +1,6 @@
 $podium-colors: ('gold', 'silver', 'bronze');
 
-.okp4-nemeton-web-leaderboard-table-main {
+.furya-praetoria-web-leaderboard-table-main {
   @include with-gradient-container;
   margin-top: 30px;
   flex-direction: column;
@@ -12,7 +12,7 @@ $podium-colors: ('gold', 'silver', 'bronze');
     gap: unset;
   }
 
-  .okp4-nemeton-web-leaderboard-table-header-container {
+  .furya-praetoria-web-leaderboard-table-header-container {
     display: flex;
     align-items: center;
     width: 100%;
@@ -23,7 +23,7 @@ $podium-colors: ('gold', 'silver', 'bronze');
     }
   }
 
-  .okp4-nemeton-web-leaderboard-table-content-container {
+  .furya-praetoria-web-leaderboard-table-content-container {
     width: 100%;
     margin-top: 20px;
     min-height: 400px;
@@ -84,7 +84,7 @@ $podium-colors: ('gold', 'silver', 'bronze');
             background-attachment: fixed;
           }
 
-          .okp4-nemeton-web-leaderboard-table-podium-logo {
+          .furya-praetoria-web-leaderboard-table-podium-logo {
             position: absolute;
             width: 39px;
             height: 39px;
@@ -95,7 +95,7 @@ $podium-colors: ('gold', 'silver', 'bronze');
             bottom: 0;
             @each $podium-color in $podium-colors {
               &.#{$podium-color} {
-                background-image: url('/icons/#{$podium-color}-druid.svg');
+                background-image: url('/icons/#{$podium-color}-dragoon.svg');
               }
             }
           }
@@ -111,7 +111,7 @@ $podium-colors: ('gold', 'silver', 'bronze');
               border-radius: 4px;
             }
 
-            .okp4-nemeton-web-copy-logo {
+            .furya-praetoria-web-copy-logo {
               width: 100%;
             }
           }
@@ -158,7 +158,7 @@ $podium-colors: ('gold', 'silver', 'bronze');
   }
 }
 
-.okp4-nemeton-web-tasks-table-main {
+.furya-praetoria-web-tasks-table-main {
   margin-top: 37px;
 
   table {

@@ -1,14 +1,14 @@
 import type { PhasesConfig } from '../../types/config.type'
-import { beltaine } from './beltaine'
-import { imbolc } from './imbolc'
-import { sidh } from './sidh'
+import { dilatatio } from './dilatatio'
+import { munitio } from './munitio'
+import { fundamen } from './fundamen'
 import type { PhaseDTO } from './dto.type'
-import { lughnasad } from './lughnasad'
+import { imperium } from './imperium'
 
 const Phases = (phases: PhasesConfig): PhaseDTO[] => [
-  sidh(phases),
-  imbolc(phases),
-  beltaine(phases),
-  lughnasad(phases)
+  fundamen(phases),
+  munitio(phases),
+  dilatatio(phases),
+  imperium(phases)
 ]
 export default Phases

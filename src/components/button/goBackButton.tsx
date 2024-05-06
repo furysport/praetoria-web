@@ -11,7 +11,7 @@ export const GoBackButton = (): JSX.Element => {
   }, [router])
 
   return (
-    <div className="okp4-nemeton-web-go-back-button-container" onClick={handleGoBack}>
+    <div className="furya-praetoria-web-go-back-button-container" onClick={handleGoBack}>
       <ArrowBackIcon />
       <span>back</span>
     </div>

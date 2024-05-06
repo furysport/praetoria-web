@@ -2,11 +2,11 @@ import type { PhasesConfig } from '../../types/config.type'
 import { getPhaseStatus } from '../../utils'
 import type { PhaseDTO } from './dto.type'
 
-export const beltaine = ({ beltaine: { startDate, endDate } }: PhasesConfig): PhaseDTO => ({
+export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): PhaseDTO => ({
   number: 3,
-  phaseName: 'beltaine',
+  phaseName: 'dilatatio',
   phaseDescription:
-    'The third phase is focused on governance and chain upgrade. The Druids will need to vote on governance proposals to implement the new OKP4 Logic Module that interprets any Data Space rules!',
+    'The third phase is focused on governance and chain upgrade. The Dragoons will need to vote on governance proposals to implement the new Furya Logic Module that interprets any Data Space rules!',
   status: getPhaseStatus(startDate, endDate),
   phaseDuration: {
     from: startDate,
@@ -23,7 +23,7 @@ export const beltaine = ({ beltaine: { startDate, endDate } }: PhasesConfig): Ph
           contentDescription: (
             <p>
               We&apos;ll submit a governance proposal concerning the{' '}
-              <span className="okp4-nemeton-web-bold-text">wasm</span> module configuration to
+              <span className="furya-praetoria-web-bold-text">wasm</span> module configuration to
               introduce some whitelist adresses allowed to deploy smart contracts. To achieve this
               task you need to submit your vote on this proposal.
             </p>
@@ -39,7 +39,7 @@ export const beltaine = ({ beltaine: { startDate, endDate } }: PhasesConfig): Ph
           title: 'Judging Criteria',
           contentDescription: (
             <p>
-              You will receive the points once OKP4 team has checked your governance vote for
+              You will receive the points once Furya team has checked your governance vote for
               whitelist addresses.
             </p>
           )
@@ -71,7 +71,7 @@ export const beltaine = ({ beltaine: { startDate, endDate } }: PhasesConfig): Ph
           contentDescription: (
             <p>
               We&apos;ll submit a governance proposal to upgrade the chain software version which
-              will introduce our new <span className="okp4-nemeton-web-bold-text">logic</span>{' '}
+              will introduce our new <span className="furya-praetoria-web-bold-text">logic</span>{' '}
               module. The purpose of this module is to interpret the Data Space rules. To achieve
               this task you need to submit your vote on this proposal.
             </p>
@@ -87,7 +87,7 @@ export const beltaine = ({ beltaine: { startDate, endDate } }: PhasesConfig): Ph
           title: 'Judging Criteria',
           contentDescription: (
             <p>
-              You will receive the points once OKP4 team has checked your governance vote for
+              You will receive the points once Furya team has checked your governance vote for
               implementing the logic module.
             </p>
           )
@@ -118,8 +118,8 @@ export const beltaine = ({ beltaine: { startDate, endDate } }: PhasesConfig): Ph
           title: 'Description',
           contentDescription: (
             <p>
-              Once the <span className="okp4-nemeton-web-bold-text">logic</span> module governance
-              proposal is accepted, Druids need to perform the update. To achieve this task you need
+              Once the <span className="furya-praetoria-web-bold-text">logic</span> module governance
+              proposal is accepted, Dragoons need to perform the update. To achieve this task you need
               to make sure your node is updated on time and doesn&apos;t miss blocks.
             </p>
           )
@@ -158,7 +158,7 @@ export const beltaine = ({ beltaine: { startDate, endDate } }: PhasesConfig): Ph
     },
     {
       group: 'Community',
-      taskName: 'Tweet about OKP4',
+      taskName: 'Tweet about Furya',
       taskContent: [
         {
           id: 'description',
@@ -166,7 +166,7 @@ export const beltaine = ({ beltaine: { startDate, endDate } }: PhasesConfig): Ph
           contentDescription: (
             <p>
               Publish a tweet including the{' '}
-              <span className="okp4-nemeton-web-bold-text">@OKP4_Protocol</span> tag using your
+              <span className="furya-praetoria-web-bold-text">@Furya_Protocol</span> tag using your
               validator Twitter account. Feel free to share your excitement about the governance
               proposals or the coming upgrade!
             </p>
@@ -181,7 +181,7 @@ export const beltaine = ({ beltaine: { startDate, endDate } }: PhasesConfig): Ph
           id: 'criteria',
           title: 'Judging Criteria',
           contentDescription: (
-            <p>You will receive the points once OKP4 team has reviewed your tweet.</p>
+            <p>You will receive the points once Furya team has reviewed your tweet.</p>
           )
         },
         {

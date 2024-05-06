@@ -1,10 +1,10 @@
-.okp4-nemeton-web-countdown-main {
+.furya-praetoria-web-countdown-main {
   display: flex;
   justify-content: center;
   gap: 6px;
   width: 146px;
 
-  .okp4-nemeton-web-countdown-stats-container {
+  .furya-praetoria-web-countdown-stats-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +16,7 @@
       margin: unset !important;
     }
 
-    .okp4-nemeton-web-stat-value {
+    .furya-praetoria-web-stat-value {
       font-size: 61px;
       line-height: 80px;
       font-family: 'Six Caps', sans-serif;
@@ -24,7 +24,7 @@
       letter-spacing: 0.04em;
     }
 
-    .okp4-nemeton-web-stat-key {
+    .furya-praetoria-web-stat-key {
       font-size: 10px;
       line-height: 10px;
       opacity: 0.6;

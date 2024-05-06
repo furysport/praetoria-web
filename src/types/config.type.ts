@@ -1,12 +1,12 @@
 export type PhasesConfig = {
-  sidh: {
+  fundamen: {
     startDate: string
     endDate: string
     urls: {
       originalContentUrl: string
     }
   }
-  imbolc: {
+  munitio: {
     startDate: string
     endDate: string
     urls: {
@@ -15,11 +15,11 @@ export type PhasesConfig = {
       provideDashboardUrl: string
     }
   }
-  beltaine: {
+  dilatatio: {
     startDate: string
     endDate: string
   }
-  lughnasad: {
+  imperium: {
     startDate: string
     endDate: string
     urls: {
@@ -53,7 +53,7 @@ export type Config = {
       logicModuleUrl: string
     }
     supportUrls: {
-      discordNemetonUrl: string
+      discordPraetoriaUrl: string
       discordTicketUrl: string
     }
     mailAddresses: {

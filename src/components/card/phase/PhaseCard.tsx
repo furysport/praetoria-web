@@ -36,32 +36,32 @@ export const PhaseCard = ({
   }, [isDropDownOpen])
 
   const mask = (
-    <div className="okp4-nemeton-web-phase-card-mask-container">
-      <div className="okp4-nemeton-web-phase-card-mask-divider" />
+    <div className="furya-praetoria-web-phase-card-mask-container">
+      <div className="furya-praetoria-web-phase-card-mask-divider" />
       <h2>Coming Soon</h2>
-      <div className="okp4-nemeton-web-phase-card-mask-divider" />
+      <div className="furya-praetoria-web-phase-card-mask-divider" />
     </div>
   )
 
   const buttonChallenges = (
-    <div className="okp4-nemeton-web-phase-card-content-button-container" onClick={toggleDropDown}>
-      <span className="okp4-nemeton-web-phase-card-button right">Challenges & Rewards</span>
+    <div className="furya-praetoria-web-phase-card-content-button-container" onClick={toggleDropDown}>
+      <span className="furya-praetoria-web-phase-card-button right">Challenges & Rewards</span>
     </div>
   )
 
   return (
-    <div className="okp4-nemeton-web-phase-card-main">
-      <div className={classNames('okp4-nemeton-web-phase-card-container', phaseName)}>
+    <div className="furya-praetoria-web-phase-card-main">
+      <div className={classNames('furya-praetoria-web-phase-card-container', phaseName)}>
         <div
           className={classNames(
-            'okp4-nemeton-web-phase-card-content-container',
+            'furya-praetoria-web-phase-card-content-container',
             { 'no-border': status === 'coming' },
             phaseName
           )}
         >
           {status === 'coming' && mask}
-          <div className={classNames('okp4-nemeton-web-phase-card-content-details', phaseName)}>
-            <div className="okp4-nemeton-web-phase-card-content-title">
+          <div className={classNames('furya-praetoria-web-phase-card-content-details', phaseName)}>
+            <div className="furya-praetoria-web-phase-card-content-title">
               <h2>Phase {number}</h2>
               <h1>{phaseName}</h1>
             </div>

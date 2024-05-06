@@ -1,10 +1,10 @@
 import { Skeleton } from '@mui/material'
 import classNames from 'classnames'
 import Image from 'next/image'
-import hatDruidAnimationData from '../../../public/json/hat-druid.json'
+import hatDragoonAnimationData from '../../../public/json/hat-dragoon.json'
 import React, { useCallback, useMemo, useState } from 'react'
 import { useMediaType } from '../../hook/useMediaType'
-import type { DruidDescriptor } from '../../entity/druid'
+import type { DragoonDescriptor } from '../../entity/dragoon'
 import { Search } from '../search/Search'
 import { Snackbar } from '../snackbar/Snackbar'
 import { LottieLoader } from '../loader/LottieLoader'
@@ -13,7 +13,7 @@ import Link from 'next/link'
 import type { Column } from './table.type'
 
 export type LeaderboardTableProps = {
-  data: DruidDescriptor[]
+  data: DragoonDescriptor[]
   onSearchChange: (value: string) => void
   loading: boolean
   loadingMore?: boolean
@@ -35,27 +35,27 @@ export const LeaderboardTable: React.FC<LeaderboardTableProps> = ({
     [setAddress]
   )
 
-  const columns: Column<DruidDescriptor>[] = useMemo(
+  const columns: Column<DragoonDescriptor>[] = useMemo(
     () =>
       [
         {
           label: 'Rank',
-          renderCell: (druid: DruidDescriptor) => <span>{druid.rank.toLocaleString()}</span>,
+          renderCell: (dragoon: DragoonDescriptor) => <span>{dragoon.rank.toLocaleString()}</span>,
           width: isMobileScreen ? '18%' : '9%'
         },
         {
           label: 'Name',
-          renderCell: (druid: DruidDescriptor) => (
-            <Link href={`/druid/${druid.valoper}#profile`}>
+          renderCell: (dragoon: DragoonDescriptor) => (
+            <Link href={`/dragoon/${dragoon.valoper}#profile`}>
               {' '}
               <Image
                 alt="validator-avatar"
                 className="avatar-bg"
                 height={21}
-                src={druid.identity.avatar}
+                src={dragoon.identity.avatar}
                 width={21}
               />
-              <span>{druid.identity.name}</span>
+              <span>{dragoon.identity.name}</span>
             </Link>
           ),
           width: isMobileScreen ? '56%' : '29%'
@@ -63,10 +63,10 @@ export const LeaderboardTable: React.FC<LeaderboardTableProps> = ({
         {
           label: 'Address',
           width: '25%',
-          renderCell: (druid: DruidDescriptor) => (
+          renderCell: (dragoon: DragoonDescriptor) => (
             <div className="flex-cell">
-              <span>{druid.valoper}</span>
-              <Copy item={druid.valoper} onCopied={handleCopyAddress} />
+              <span>{dragoon.valoper}</span>
+              <Copy item={dragoon.valoper} onCopied={handleCopyAddress} />
             </div>
           ),
           hidden: isMobileScreen
@@ -74,15 +74,15 @@ export const LeaderboardTable: React.FC<LeaderboardTableProps> = ({
         {
           label: 'Completed tasks',
           width: '22%',
-          renderCell: (druid: DruidDescriptor) => (
-            <span>{`${druid.tasks.completed.toString()}/${druid.tasks.started.toString()}`}</span>
+          renderCell: (dragoon: DragoonDescriptor) => (
+            <span>{`${dragoon.tasks.completed.toString()}/${dragoon.tasks.started.toString()}`}</span>
           ),
           hidden: isMobileScreen
         },
         {
           label: 'Total points',
           width: isMobileScreen ? '26%' : '15%',
-          renderCell: (druid: DruidDescriptor) => <span>{druid.points.toLocaleString()}</span>
+          renderCell: (dragoon: DragoonDescriptor) => <span>{dragoon.points.toLocaleString()}</span>
         }
       ].filter(column => !column.hidden),
     [handleCopyAddress, isMobileScreen]
@@ -123,12 +123,12 @@ export const LeaderboardTable: React.FC<LeaderboardTableProps> = ({
       <>
         <tr>
           <td colSpan={5} style={{ textAlign: 'center', paddingTop: '20px' }}>
-            <LottieLoader animationData={hatDruidAnimationData} width={isMobileScreen ? 80 : 130} />
+            <LottieLoader animationData={hatDragoonAnimationData} width={isMobileScreen ? 80 : 130} />
           </td>
         </tr>
         <tr>
           <td colSpan={5} style={{ textAlign: 'center', fontSize: '14px' }}>
-            Loading more druids...
+            Loading more dragoons...
           </td>
         </tr>
       </>
@@ -138,12 +138,12 @@ export const LeaderboardTable: React.FC<LeaderboardTableProps> = ({
 
   return (
     <>
-      <div className="okp4-nemeton-web-leaderboard-table-main">
-        <div className="okp4-nemeton-web-leaderboard-table-header-container">
+      <div className="furya-praetoria-web-leaderboard-table-main">
+        <div className="furya-praetoria-web-leaderboard-table-header-container">
           <h2>RANKING</h2>
           <Search onChange={handleSearchChange} />
         </div>
-        <div className="okp4-nemeton-web-leaderboard-table-content-container">
+        <div className="furya-praetoria-web-leaderboard-table-content-container">
           <table>
             <thead>
               <tr>
@@ -172,7 +172,7 @@ export const LeaderboardTable: React.FC<LeaderboardTableProps> = ({
                         })}
                         {!isMobileScreen && index <= 2 && (
                           <td
-                            className={`okp4-nemeton-web-leaderboard-table-podium-logo ${podiumClassname}`}
+                            className={`furya-praetoria-web-leaderboard-table-podium-logo ${podiumClassname}`}
                           />
                         )}
                       </tr>
@@ -184,7 +184,7 @@ export const LeaderboardTable: React.FC<LeaderboardTableProps> = ({
               {!data.length && !loading && (
                 <tr>
                   <td colSpan={5} style={{ textAlign: 'center' }}>
-                    No druids found...
+                    No dragoons found...
                   </td>
                 </tr>
               )}

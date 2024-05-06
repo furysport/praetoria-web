@@ -33,12 +33,12 @@ export const Accordion = ({
 
   return (
     <div
-      className={classNames(`okp4-nemeton-web-accordion-main ${variant}`, {
+      className={classNames(`furya-praetoria-web-accordion-main ${variant}`, {
         disabled
       })}
     >
       <div
-        className={classNames(`okp4-nemeton-web-accordion-title-container ${variant}`, {
+        className={classNames(`furya-praetoria-web-accordion-title-container ${variant}`, {
           disabled
         })}
       >
@@ -47,7 +47,7 @@ export const Accordion = ({
           <div>
             <Image
               alt="arrow-down"
-              className={`okp4-nemeton-web-icon ${isExpanded ? 'rotate-up' : 'rotate-down'}`}
+              className={`furya-praetoria-web-icon ${isExpanded ? 'rotate-up' : 'rotate-down'}`}
               height={iconProps?.height ?? 30}
               onClick={onToggle}
               src="/icons/arrow.svg"
@@ -57,7 +57,7 @@ export const Accordion = ({
         )}
       </div>
       {isExpanded && (
-        <div className="okp4-nemeton-web-accordion-content" ref={refObject}>
+        <div className="furya-praetoria-web-accordion-content" ref={refObject}>
           {content}
         </div>
       )}

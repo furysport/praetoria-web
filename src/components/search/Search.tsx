@@ -14,7 +14,7 @@ export const Search: React.FC<SearchProps> = ({ onChange, disabled }) => {
     [onChange]
   )
   return (
-    <div className="okp4-nemeton-web-search-main">
+    <div className="furya-praetoria-web-search-main">
       <input disabled={disabled} onChange={handleChange} placeholder="Search" type={'text'} />
     </div>
   )

@@ -14,8 +14,8 @@ export type Scalars = {
   Int: number;
   Float: number;
   /**
-   * Represents an okp4 address as [Bech32](https://en.bitcoin.it/wiki/Bech32) format prefixed by the blockchain prefix.
-   * e.g. `okp41jse8senm9hcvydhl8v9x47kfe5z82zmwtw8jvj`
+   * Represents an furya address as [Bech32](https://en.bitcoin.it/wiki/Bech32) format prefixed by the blockchain prefix.
+   * e.g. `furya1jse8senm9hcvydhl8v9x47kfe5z82zmwtw8jvj`
    */
   AccAddress: any;
   /**
@@ -39,12 +39,12 @@ export type Scalars = {
   UInt64: any;
   /**
    * Represents an [Uniform Resource Identifier](https://fr.wikipedia.org/wiki/Uniform_Resource_Identifier) to permanently identify a resource.
-   * e.g. `https://okp4.network/`
+   * e.g. `https://furya.network/`
    */
   URI: string;
   /**
-   * Represents an okp4 validator address as [Bech32](https://en.bitcoin.it/wiki/Bech32) format prefixed by the blockchain valoper prefix.
-   * e.g. `okp4valoper1jse8senm9hcvydhl8v9x47kfe5z82zmwtw8jvj`
+   * Represents an furya validator address as [Bech32](https://en.bitcoin.it/wiki/Bech32) format prefixed by the blockchain valoper prefix.
+   * e.g. `furyavaloper1jse8senm9hcvydhl8v9x47kfe5z82zmwtw8jvj`
    */
   ValoperAddress: string;
   /** Represents a void return type, carrying no value. */
@@ -116,21 +116,21 @@ export type Mutation = {
    */
   readonly completeTask?: Maybe<Scalars['Void']>;
   /**
-   * Emit a `RegisterDashboardEvent` in the system to register a dashboard url for the given druid validator.
+   * Emit a `RegisterDashboardEvent` in the system to register a dashboard url for the given dragoon validator.
    *
    * Through the event handling logic, the validator will be fulfilled with it's dashboard url and task completed with points
    * attribution if still in progress. If event is submitted multiple time, dashboard url is updated.
    */
   readonly registerDashboardURL?: Maybe<Scalars['Void']>;
   /**
-   * Emit a `RegisterRPCEndpointEvent` in the system to register RPC node url for the given druid validator.
+   * Emit a `RegisterRPCEndpointEvent` in the system to register RPC node url for the given dragoon validator.
    *
    * Through the event handling logic, the validator will be fulfilled with his RPC endpoint url and task completed with points
    * attribution if still in progress. If event is submitted multiple time, RPC endpoint is updated.
    */
   readonly registerRPCEndpoint?: Maybe<Scalars['Void']>;
   /**
-   * Emit a `RegisterSnapshotEvent` in the system to register a snapshot url for the given druid validator.
+   * Emit a `RegisterSnapshotEvent` in the system to register a snapshot url for the given dragoon validator.
    *
    * Through the event handling logic, the validator will be fulfilled with it's snapshot url and task completed with points
    * attribution if still in progress. If event is submitted multiple time, snapshot url is updated.
@@ -150,7 +150,7 @@ export type Mutation = {
   readonly removeValidator?: Maybe<Scalars['Void']>;
   readonly submitTask?: Maybe<Scalars['Void']>;
   /**
-   * Emit a `GenTXSubmittedEvent` in the system carrying information related to a druid participating to the Nemeton program, this contain the combination of technical validator information & application information.
+   * Emit a `GenTXSubmittedEvent` in the system carrying information related to a dragoon participating to the Praetoria program, this contain the combination of technical validator information & application information.
    *
    * Through the event handling logic, the validator will be added to the board and the corresponding task completed with points attribution if still in progress.
    */
@@ -258,7 +258,7 @@ export type PerPhaseTasks = {
   readonly tasks: ReadonlyArray<TaskState>;
 };
 
-/** Represents a Phase of the Nemeton Program */
+/** Represents a Phase of the Praetoria Program */
 export type Phase = {
   readonly __typename?: 'Phase';
   /** The current block range of the phase, if any. */
@@ -277,7 +277,7 @@ export type Phase = {
   readonly startDate: Scalars['Time'];
   /** `true` if the phase is in progress. */
   readonly started: Scalars['Boolean'];
-  /** The tasks composing the phase the druids will have to perform. */
+  /** The tasks composing the phase the dragoons will have to perform. */
   readonly tasks: ReadonlyArray<Task>;
 };
 
@@ -296,7 +296,7 @@ export type Phases = {
 
 export type Query = {
   readonly __typename?: 'Query';
-  /** Retrieve the state of the Nemeton Leaderboard. */
+  /** Retrieve the state of the Praetoria Leaderboard. */
   readonly board: BoardConnection;
   /** Fetch a specific Phase. */
   readonly phase?: Maybe<Phase>;
@@ -304,7 +304,7 @@ export type Query = {
   readonly phases: Phases;
   /** Fetch a validator through one of its unique property. */
   readonly validator?: Maybe<Validator>;
-  /** The total number of participants, or druids, or validator. */
+  /** The total number of participants, or dragoons, or validator. */
   readonly validatorCount: Scalars['Int'];
 };
 
@@ -343,7 +343,7 @@ export type SubmissionTaskState = TaskState & {
   readonly task: Task;
 };
 
-/** Represents a phase's task, containing only descriptive elements. It does not expressed any potential progress or result as it is not linked to a druid. */
+/** Represents a phase's task, containing only descriptive elements. It does not expressed any potential progress or result as it is not linked to a dragoon. */
 export type Task = {
   readonly __typename?: 'Task';
   /** The description of the task. */
@@ -395,7 +395,7 @@ export type TasksForPhaseArgs = {
   number: Scalars['Int'];
 };
 
-/** Represents a validator, a participant or a druid in the Nemeton program. */
+/** Represents a validator, a participant or a dragoon in the Praetoria program. */
 export type Validator = {
   readonly __typename?: 'Validator';
   /** The validator country. */
