@@ -56,12 +56,12 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     part: 'General Concepts',
     question: (
       <div className="furya-praetoria-web-tasks-accordion-title">
-        <h3>Who are the dragoons in Furya ecosystem?</h3>
+        <h3>Who are the Dragoons in Furya ecosystem?</h3>
       </div>
     ),
     answer: (
       <p>
-        The word « dragoon » corresponds to the name of the validators who participate in the
+        The word « Dragoon » corresponds to the name of the validators who participate in the
         incentivized testnet Praetoria Program, they are chosen by the Furya team.
       </p>
     )
@@ -76,7 +76,7 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     answer: (
       <p>
         The Furya blockchain is a Layer 1 PoS (proof of stake). To secure its network, we need a set
-        of validators called dragoons in the context of the Praetoria Program. Dragoons are in charge of
+        of validators called Dragoons in the context of the Praetoria Program. Dragoons are in charge of
         operating nodes to build, share, verify blocks to operate and secure the network. They will
         have specific tasks given to them and can choose to perform them to earn points and climb
         the leaderbord.
@@ -101,7 +101,7 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     )
   },
   {
-    part: 'How to participate in the Praetoria Program (CLOSED)',
+    part: 'How to participate in the Praetoria Program',
     question: (
       <div className="furya-praetoria-web-tasks-accordion-title">
         <h3>Who can participate in the Praetoria program?</h3>
@@ -109,31 +109,31 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     ),
     answer: (
       <p>
-        We have limited the Praetoria Incentivized Program to 150 dragoons. You must register via our
-        form <span className="furya-praetoria-web-bold-text">(closed)</span> to be part of these 150
-        dragoons. Our team will review your application and contact you if you are selected to join
+        We have limited the Praetoria Incentivized Program to 57 Dragoons. You must register via our
+        <span className="furya-praetoria-web-bold-text">form </span> to be part of these 57
+        Dragoons. Our team will review your application and contact you if you are selected to join
         the Praetoria Program.
       </p>
     )
   },
   {
-    part: 'How to participate in the Praetoria Program (CLOSED)',
+    part: 'How to participate in the Praetoria Program',
     question: (
       <div className="furya-praetoria-web-tasks-accordion-title">
-        <h3>Why 150 dragoons?</h3>
+        <h3>Why 57 Dragoons?</h3>
       </div>
     ),
     answer: (
       <p>
-        We will choose only 150 dragoons for various reasons such as logistics, tokenomics, technical,
-        internal resources reasons, etc. <br />
+        We will choose only 57 Dragoons for various reasons such as logistics, tokenomics, technical,
+        internal resources, etc. <br />
         Community members who are not selected will have the opportunity to get involved and earn
         rewards during other stages of the network, so stay tuned.
       </p>
     )
   },
   {
-    part: 'How to participate in the Praetoria Program (CLOSED)',
+    part: 'How to participate in the Praetoria Program',
     question: (
       <div className="furya-praetoria-web-tasks-accordion-title">
         <h3>How do I sign up for the Praetoria program?</h3>
@@ -141,14 +141,14 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     ),
     answer: (
       <p>
-        To register for the Praetoria Program, complete the [registration form]{' '}
-        <span className="furya-praetoria-web-bold-text">(closed)</span> . We will review your
+        To register for the Praetoria Program, complete the {' '}
+        <span className="furya-praetoria-web-bold-text">registration form</span> . We will review your
         application and inform you if you have been accepted or not to our program.
       </p>
     )
   },
   {
-    part: 'How to participate in the Praetoria Program (CLOSED)',
+    part: 'How to participate in the Praetoria Program',
     question: (
       <div className="furya-praetoria-web-tasks-accordion-title">
         <h3>Do I need technical skills to participate in the Praetoria Program?</h3>
@@ -163,7 +163,7 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     )
   },
   {
-    part: 'How to participate in the Praetoria Program (CLOSED)',
+    part: 'How to participate in the Praetoria Program',
     question: (
       <div className="furya-praetoria-web-tasks-accordion-title">
         <h3>
@@ -175,13 +175,12 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     answer: (
       <p>
         We will inform all people who have registered for the Praetoria Program by email. Whether you
-        are accepted or not, you will receive a response. The Furya team will select dragoons on Nov
-        21st and the results will be announced on Nov 25th.
+        are accepted or not, you will receive a response.
       </p>
     )
   },
   {
-    part: 'How to participate in the Praetoria Program (CLOSED)',
+    part: 'How to participate in the Praetoria Program',
     question: (
       <div className="furya-praetoria-web-tasks-accordion-title">
         <h3>What are the selection criteria for participating in the program?</h3>
@@ -209,9 +208,7 @@ const faqs = (urls: FAQUrls): FAQ[] => [
         <p>
           You can apply using our application form if you meet the selection criteria. Our team will
           review your application, and you will be informed if you are accepted as a Praetoria Program
-          validator (dragoon). <br />
-          The Furya team will select dragoons on Nov 21st and the results will be announced on Nov
-          25th.
+          validator (Dragoon). <br />
         </p>
       </>
     )
@@ -266,11 +263,11 @@ const faqs = (urls: FAQUrls): FAQ[] => [
           </li>
         </ul>
         <p>
-          Dragoons will be rewarded with a mix of token rewards and delegation commitment. 1% of the
+          Dragoons will be rewarded with a mix of token rewards and delegation commitment. 1m of the
           total supply of mainnet tokens will be given to Praetoria participants as a reward based on
           their participation and performance during the program.
           <br />
-          Many more tokens (Furya foundation vesting) will be delegated to Dragoons who operate nodes
+          Tokens from the Furya foundation will be delegated to Dragoons who operate nodes
           on mainnet based on their participation and performance during the program.
         </p>
       </>
