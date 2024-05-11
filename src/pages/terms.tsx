@@ -16,7 +16,6 @@ const Terms: NextPage<TermsProps> = props => {
     socialMediaUrls: { discordUrl },
     mailAddresses: { contact },
     licenceUrls: { blockchainLicenceUrl, codeLicenceUrl, assetsLicenceUrl },
-    termsUrls: { arbitrageUrl, arbitrageRulesUrl }
   } = urls
 
   return (
@@ -30,7 +29,7 @@ const Terms: NextPage<TermsProps> = props => {
           <div className="furya-praetoria-web-page-terms-update">
             <div className="furya-praetoria-web-page-terms-update-title" id="update-jan-11-2023">
               <h2>Update</h2>
-              <h3>Jan 11th 2023</h3>
+              <h3>May 11th 2024</h3>
             </div>
             <p>
               In order to maintain the integrity and efficiency of the Praetoria program, Furya has
@@ -70,17 +69,6 @@ const Terms: NextPage<TermsProps> = props => {
               join.
             </p>
           </div>
-
-          <p>
-            These Praetoria Testnet participation Terms & Conditions (the &quot;Terms&quot;) apply to
-            your access to and use of the websites, platform, software, technologies, features and
-            other online products and services (collectively, the &quot;Furya Services&quot; or
-            &quot;Services&quot;) provided or made available by Furya SAS, a French company
-            registered under number 842765356 and whose registered office is located at 1 passage de
-            l&apos;Europe - 31400 Toulouse - France (the &quot;Company&quot;, &quot;Furya&quot;, or
-            &quot;we&quot;) in connection with the Testnet (&quot;Testnet&quot;, or
-            &quot;Praetoria&quot;).
-          </p>
 
           <p>
             The Praetoria program is designed to improve the operational experience, security, and
@@ -439,80 +427,6 @@ const Terms: NextPage<TermsProps> = props => {
               </li>
             </ul>
             <li>
-              <h2>Law Enforcement</h2>
-            </li>
-            <p>
-              You agree to comply with all laws, rules, regulations, and generally accepted
-              practices in the relevant jurisdictions (including laws regarding the export of data
-              or software to and from France or other relevant countries and all applicable privacy
-              and data collection laws and regulations) in connection with your participation in
-              Praetoria. To the extent required by law, you are solely responsible for obtaining or
-              filing any regulatory approval, authorization, registration, permit or other
-              authorization and must comply with the requirements of such authorization.
-            </p>
-            <li>
-              <h2>Warranty Disclaimer</h2>
-            </li>
-            <p>
-              Furya makes no representations or warranties of any kind with respect to our Testnet.
-              The Testnet is provided &quot;as is&quot; with all faults and without warranty of any
-              kind. Without limiting the foregoing, Furya expressly disclaims any implied warranties
-              of merchantability, fitness for a particular purpose, value, quiet enjoyment, and
-              non-infringement, as well as any warranties arising out of the ordinary course of
-              business or usage of trade. Furya has made no promises or warranties regarding the
-              delivery of any future features or functions. Any discussion of future features or
-              functions, whether before or after acceptance of these Terms, is for informational
-              purposes only and Furya has no obligation to provide such features or functions. You
-              acknowledge that you have not relied on any representations, promises, assurances or
-              warranties that are not set forth in the Terms.
-            </p>
-
-            <p>
-              You agree and acknowledge that there are risks associated with participating in
-              Praetoria, including, but not limited to, the risk of failure of hardware, software and
-              internet connections, the risk of introduction of malware, loss of rewards and
-              security risks. You agree and acknowledge that Furya will not be responsible for any
-              loss, failure, interruption, error, distortion, or delay that you may experience while
-              participating in the Testnet, however caused. Furya will not be responsible for any
-              loss and assumes no responsibility for and will not be liable to you for your
-              participation in Praetoria.
-            </p>
-
-            <p>
-              Furya does not warrant that Praetoria will meet your requirements or be available on an
-              uninterrupted, secure, error-free, or virus-free basis. Furya does not warrant the
-              quality, accuracy, timeliness, truthfulness, completeness or reliability of any
-              information or materials offered in connection with the Testnet. Any rewards or
-              incentives you receive (including tokens) in connection with the Testnet may be
-              worthless.
-            </p>
-
-            <p>You further understand that:</p>
-            <ul>
-              <li>
-                <p>
-                  Access to Praetoria may require the use of your personal computer and/or mobile
-                  devices, as well as communications with or use of data and storage on such
-                  devices. You are responsible for any Internet or cell phone connection charges you
-                  may incur in connection with your voluntary participation in Testnet.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Certain information, including your transaction records on the blockchain, are all
-                  public information and may be viewed by anyone, including Testnet participants and
-                  non-participants.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Security and other blockchain audits undertaken by Furya or third parties will
-                  access user data and may result in loss of data or actions by telecommunications
-                  and other third party service providers.
-                </p>
-              </li>
-            </ul>
-            <li>
               <h2>Limitation of Liability</h2>
             </li>
             <p>
@@ -563,105 +477,6 @@ const Terms: NextPage<TermsProps> = props => {
               Information from disclosure using the same degree of care that you use to protect your
               own Confidential Information of the same nature, but in no event using less than
               reasonable care.
-            </p>
-            <li>
-              <h2>Applicable Law</h2>
-            </li>
-            <p>
-              These Terms and any action relating to them shall be governed by the laws of France,
-              without regard to its conflict of law provisions. The exclusive jurisdiction for all
-              disputes (defined below) shall be Toulouse, and you and Furya each waive any objection
-              to such jurisdiction and venue.
-            </p>
-            <li>
-              <h2>Dispute Resolution</h2>
-            </li>
-            <p>
-              Please read the following section carefully, as it requires you to arbitrate certain
-              disputes and claims with Furya and limits the way you may obtain relief from us. No
-              class or representative action or arbitration is permitted under this arbitration
-              provision. In addition, arbitration prevents you from filing a lawsuit or having a
-              trial with a judge.
-            </p>
-
-            <p>
-              (a) Binding Arbitration of Disputes. We both agree that any dispute, claim, or
-              controversy arising out of your participation in the Testnet, use of the Furya Services
-              or these Terms or the breach, termination, performance, interpretation, or validity
-              thereof (collectively, &apos;Disputes&apos;) shall be resolved solely by binding
-              individual arbitration and not by any class, representative or consolidated action or
-              proceeding. You and Furya agree that the Chambre Arbitrale Internationale de Paris,
-              France shall govern the interpretation and enforcement of these Terms, and that you
-              and Furya each waive the right to a trial by judge or to participate in a class action.
-              This arbitration provision shall survive the termination of these Terms.
-            </p>
-
-            <p>
-              (b) Exceptions. As limited exceptions to the above section: (i) we may both seek to
-              resolve a dispute in small claims court if it qualifies; and (ii) we both retain the
-              right to seek injunctive or other equitable relief from a court to prevent (or enjoin)
-              infringement or misappropriation of our intellectual property rights.
-            </p>
-
-            <p>
-              (c) Conduct of Arbitration and Arbitration Rules. The arbitration shall be conducted
-              by the Chambre Arbitrale Internationale de Paris (&apos;CAIP&apos;) under its
-              then-current Consumer Arbitration Rules (&apos;CAIP Rules&apos;), unless modified by
-              these Terms. The CAIP Rules are available at{' '}
-              <a href={arbitrageUrl} rel="noreferrer" target="_blank">
-                {arbitrageUrl}
-              </a>
-              . A party wishing to initiate an arbitration must submit a written request for
-              arbitration to CAIP and notify the other party as set forth in the CAIP Rules
-              (Arbitration Rules:{' '}
-              <a href={arbitrageRulesUrl} rel="noreferrer" target="_blank">
-                {arbitrageRulesUrl}
-              </a>
-              ). The place of arbitration shall be Toulouse. The language of the arbitration shall
-              be English. The parties agree that the arbitrator shall have exclusive authority to
-              decide all questions relating to the interpretation, applicability, performance, and
-              scope of this arbitration agreement.
-            </p>
-
-            <p>
-              (d) Arbitration Fees. Payment of all filing, administration and arbitration fees will
-              be governed by the CAIP rules. If we prevail in the arbitration, we will seek, to a
-              reasonable extent, considering the facts in dispute, to recover them from you. If you
-              prevail in the arbitration, you will be entitled to an award of attorneys&apos; fees
-              and costs to the extent provided by applicable law.
-            </p>
-
-            <p>
-              (e) Injunctive and Declaratory Relief. Except as provided above, the arbitrator will
-              determine all questions of liability on the merits of any claim asserted by either
-              party and may grant declaratory or injunctive relief only in favour of the individual
-              party seeking relief and only to the extent necessary to provide relief justified by
-              that party&apos;s individual claim. To the extent that either you or we prevail on a
-              claim and seek public injunctive relief (i.e., injunctive relief whose primary purpose
-              and effect is to enjoin unlawful acts that threaten future harm to the public), the
-              right to and extent of such relief shall be litigated in a civil court of competent
-              jurisdiction and not arbitrated. The parties agree that litigation of any public
-              injunction issue shall be stayed pending the outcome of arbitration on the merits of
-              any individual claim.
-            </p>
-
-            <p>
-              (f) Waiver of Class Action; Waiver of Trial by Judge. You and Furya agree that each may
-              bring Claims against the other only in your or his or her individual capacity, and not
-              as a plaintiff or class member in any purported class or representative proceeding. In
-              addition, if the parties&apos; Dispute is resolved by arbitration, the arbitrator may
-              not consolidate another person&apos;s Claims with your Claims, and may not otherwise
-              preside over any form of representative or class proceeding. If this specific
-              provision is found to be unenforceable, this entire section on dispute resolution will
-              be null and void. You and we both agree to waive the right to demand a trial by a
-              judge.
-            </p>
-
-            <p>
-              (g) Severability. Except as provided above (&apos;Class Action Waiver&apos;), if an
-              arbitrator or court of competent jurisdiction determines that any part of these Terms
-              is invalid or unenforceable, the remaining portions of these Terms shall continue to
-              apply.
             </p>
             <li>
               <h2>Assignment</h2>

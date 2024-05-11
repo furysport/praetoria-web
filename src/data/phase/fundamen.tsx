@@ -32,18 +32,18 @@ export const fundamen = ({
               <br />
               The gentx creation and registration procedure are detailed here:{' '}
               <a
-                href="https://github.com/furysport/networks/tree/main/chains/praetoria-1"
+                href="https://github.com/furysport/networks/tree/networks/chains/praetoria-1"
                 rel="noreferrer"
                 target="_blank"
               >
-                https://github.com/furysport/networks/tree/main/chains/praetoria-1.
+                https://github.com/furysport/networks/tree/networks/chains/praetoria-1
               </a>{' '}
-              <br />
+              <br /><br />
               Your gentx shall be submitted through an issue on the{' '}
               <a href=" https://github.com/furysport/networks/" rel="noreferrer" target="_blank">
-                https://github.com/furysport/networks/
+                https://github.com/furysport/networks
               </a>{' '}
-              GitHub repository. <br />
+              GitHub repository. <br /><br />
               This task is required to make you visible on the Leaderboard.
             </p>
           )
@@ -67,13 +67,13 @@ export const fundamen = ({
           id: 'submit',
           title: 'How to Submit',
           contentDescription: (
-            <p>Send the issue number in a private message to Foxcraft#9282 on Discord.</p>
+            <p>Send the issue number in a private message to @nimrostafarian on Telegram.</p>
           )
         }
       ],
       taskDuration: {
-        from: '2024-05-06T00:00:00Z',
-        to: '2024-05-08T23:59:00Z'
+        from: '2024-05-11T00:00:00Z',
+        to: '2024-05-13T23:59:00Z'
       },
       points: 1000
     },
@@ -86,15 +86,15 @@ export const fundamen = ({
           title: 'Description',
           contentDescription: (
             <p>
-              It is time to make the praetoria-1 network come alive; you have to set up your node and
+              It is time to make the Praetoria network come alive; you have to set up your node and
               join the network. The technical documentation regarding node setup and network join
               information is here:{' '}
               <a
-                href=" https://docs.furya.network/nodes/introduction"
+                href="https://docs.furya.network/guides/join-the-network/become-a-validator"
                 rel="noreferrer"
                 target="_blank"
               >
-                https://docs.furya.network/nodes/introduction.
+                https://docs.furya.network/guides/join-the-network/become-a-validator.
               </a>
             </p>
           )
@@ -118,8 +118,8 @@ export const fundamen = ({
         }
       ],
       taskDuration: {
-        from: '2024-05-06T00:00:00Z',
-        to: '2024-05-08T23:59:00Z'
+        from: '2024-05-11T00:00:00Z',
+        to: '2024-06-13T23:59:00Z'
       },
       points: 2000
     },
@@ -132,7 +132,7 @@ export const fundamen = ({
           title: 'Description',
           contentDescription: (
             <p>
-              Publish a tweet about the Praetoria testnet while including the @furya_protocol tag using
+              Publish a tweet about the Praetoria Testnet while including the @FuryaChain tag using
               your validator Twitter account. Feel free to share your excitement!
             </p>
           )
@@ -156,8 +156,8 @@ export const fundamen = ({
         }
       ],
       taskDuration: {
-        from: '2024-05-06T00:00:00Z',
-        to: '2024-05-08T23:59:00Z'
+        from: '2024-05-11T00:00:00Z',
+        to: '2024-06-11T23:59:00Z'
       },
       points: 500
     },
@@ -181,7 +181,7 @@ export const fundamen = ({
           id: 'criteria',
           title: 'Judging Criteria',
           contentDescription: (
-            <p>You will receive the points once the Furya team has reviewed your tweet.</p>
+            <p>You will receive the points once the Furya team has reviewed the total uptime.</p>
           )
         },
         {
@@ -191,8 +191,8 @@ export const fundamen = ({
         }
       ],
       taskDuration: {
-        from: '2024-05-06T00:00:00Z',
-        to: '2024-05-08T23:59:00Z'
+        from: '2024-05-14T00:00:00Z',
+        to: '2024-06-14T23:59:00Z'
       },
       points: 2500
     },
@@ -207,7 +207,7 @@ export const fundamen = ({
             <p>
               Based on your experience as a validator, write an original article, twitter thread or
               video content providing value to other validators and the community in general.
-              Content must be in English. <br />
+              Content must be in English. <br /><br />
               The content may be used later to bring improvements to the node (
               <a
                 href=" https://docs.furya.network/nodes/introduction"
@@ -220,7 +220,7 @@ export const fundamen = ({
               <a href="  https://blog.furya.network/" rel="noreferrer" target="_blank">
                 https://blog.furya.network/
               </a>
-              ), or shared in social networks. <br />
+              ), or shared in social networks. <br /><br />
               If you’ve seen great documentation, articles or content ideas elsewhere, help us bring
               something similar to Furya. Feel free to be creative if you’re in the right mood!
             </p>
@@ -231,7 +231,7 @@ export const fundamen = ({
           title: 'Rewards',
           contentDescription: (
             <p>
-              Up to 10 000 points per dragoon will be attributed, capped at 150 000 points in total.
+              Up to 10 000 points per Dragoon will be attributed, capped at 150 000 points in total.
             </p>
           )
         },
@@ -271,8 +271,8 @@ export const fundamen = ({
         }
       ],
       taskDuration: {
-        from: '2024-05-06T00:00:00Z',
-        to: '2024-05-08T23:59:00Z'
+        from: '2024-05-11T00:00:00Z',
+        to: '2024-06-11T23:59:00Z'
       },
       points: 10000
     }

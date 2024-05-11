@@ -15,7 +15,7 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
   tasks: [
     {
       group: 'Nodes',
-      taskName: 'Governance vote to whitelist addresses',
+      taskName: 'Governance vote to upgrade the chain',
       taskContent: [
         {
           id: 'description',
@@ -23,8 +23,8 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
           contentDescription: (
             <p>
               We&apos;ll submit a governance proposal concerning the{' '}
-              <span className="furya-praetoria-web-bold-text">wasm</span> module configuration to
-              introduce some whitelist adresses allowed to deploy smart contracts. To achieve this
+              <span className="furya-praetoria-web-bold-text">furya chain</span> upgrade to
+              introduce the upgrade to Cosmos-SDK v0.47.8, and new modules: Alliance and TokenFactory. To achieve this
               task you need to submit your vote on this proposal.
             </p>
           )
@@ -40,7 +40,7 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
           contentDescription: (
             <p>
               You will receive the points once Furya team has checked your governance vote for
-              whitelist addresses.
+              chain upgrade.
             </p>
           )
         },
@@ -56,56 +56,8 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
         }
       ],
       taskDuration: {
-        from: '2023-02-01T12:00:00Z',
-        to: '2023-02-15T12:00:00Z'
-      },
-      points: 1500
-    },
-    {
-      group: 'Nodes',
-      taskName: 'Governance vote for logic module',
-      taskContent: [
-        {
-          id: 'description',
-          title: 'Description',
-          contentDescription: (
-            <p>
-              We&apos;ll submit a governance proposal to upgrade the chain software version which
-              will introduce our new <span className="furya-praetoria-web-bold-text">logic</span>{' '}
-              module. The purpose of this module is to interpret the Data Space rules. To achieve
-              this task you need to submit your vote on this proposal.
-            </p>
-          )
-        },
-        {
-          id: 'rewards',
-          title: 'Rewards',
-          contentDescription: <p>1 500 points.</p>
-        },
-        {
-          id: 'criteria',
-          title: 'Judging Criteria',
-          contentDescription: (
-            <p>
-              You will receive the points once Furya team has checked your governance vote for
-              implementing the logic module.
-            </p>
-          )
-        },
-        {
-          id: 'submit',
-          title: 'How to Submit',
-          contentDescription: (
-            <p>
-              You just have to vote on the proposal with your validator address - you don&apos;t
-              need to do anything else.
-            </p>
-          )
-        }
-      ],
-      taskDuration: {
-        from: '2023-02-06T12:00:00Z',
-        to: '2023-02-20T12:00:00Z'
+        from: '2024-05-13T12:00:00Z',
+        to: '2023-05-13T12:00:00Z'
       },
       points: 1500
     },
@@ -118,7 +70,7 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
           title: 'Description',
           contentDescription: (
             <p>
-              Once the <span className="furya-praetoria-web-bold-text">logic</span> module governance
+              Once the <span className="furya-praetoria-web-bold-text">furya chain</span> upgrade governance
               proposal is accepted, Dragoons need to perform the update. To achieve this task you need
               to make sure your node is updated on time and doesn&apos;t miss blocks.
             </p>
@@ -151,8 +103,8 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
         }
       ],
       taskDuration: {
-        from: '2023-02-20T12:00:00Z',
-        to: '2023-02-28T23:59:00Z'
+        from: '2024-05-14T12:00:00Z',
+        to: '2024-05-14T23:59:00Z'
       },
       points: 2500
     },
@@ -196,8 +148,8 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
         }
       ],
       taskDuration: {
-        from: '2023-02-01T12:00:00Z',
-        to: '2023-02-28T23:59:00Z'
+        from: '2024-05-13T12:00:00Z',
+        to: '2024-05-18T23:59:00Z'
       },
       points: 500
     },
@@ -238,8 +190,8 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
         }
       ],
       taskDuration: {
-        from: '2023-02-01T12:00:00Z',
-        to: '2023-02-28T23:59:00Z'
+        from: '2024-05-13T12:00:00Z',
+        to: '2024-06-13T23:59:00Z'
       },
       points: 2500
     }
