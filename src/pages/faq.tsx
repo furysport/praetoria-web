@@ -156,9 +156,9 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     ),
     answer: (
       <p>
-        Yes, a minimum of technical skills is required to participate in the Praetoria Program. You
-        need a minimum of experience in Cosmos Validator node operations, server management, and
-        maintenance.
+        Yes, a certain amount technical skills is required to participate in the Praetoria Program. 
+	At minimum, you would need experience in Cosmos Validator node operations, maintenance 
+	and server management.
       </p>
     )
   },
