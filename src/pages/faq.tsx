@@ -30,10 +30,10 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     answer: (
       <>
         <p>
-          The Praetoria Program is Furya incentivized testnet. Any validator can apply for the Praetoria
-          program by registering on the &#39;Join the program&#39; form. Only 150 validators will be
+          The Praetoria Program is the Furya Incentivized testnet. Any validator can apply for the Praetoria
+          program by registering on the &#39;Join the program&#39; form. Only 57 validators will be
           selected for phases 1 to 4 to become Dragoons, the official title for incentivized testnet
-          participants. The phase 5 (by the end of the program) will open for developers to join
+          participants. Phase 5 (by the end of the program) will open for developers to join
           though. <br />
           During every phase from 1 to 5, Dragoons will have the opportunity to participate in the
           following:

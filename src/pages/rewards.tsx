@@ -19,9 +19,9 @@ const Rewards: NextPage<RewardsProps> = props => {
           <h1>Rewards</h1>
           <p>Dragoons will be rewarded with a mix of token rewards + delegation commitment.</p>
           <p>
-            1% of the total supply of mainnet tokens will be given to Dragoons as a reward based on
-            their participation and performance during the program.Many more tokens (Furya foundation
-            vesting) will be delegated to Dragoons based on their participation and performance during
+            1m of the total supply of mainnet tokens will be given to Dragoons as a reward based on
+            their participation and performance during the program. Tokens from the Furya foundation
+            will be delegated to Dragoons based on their participation and performance during
             the program.
           </p>
         </div>
