@@ -31,7 +31,8 @@ const faqs = (urls: FAQUrls): FAQ[] => [
       <>
         <p>
           The Praetoria Program is the Furya Incentivized testnet. Any validator can apply for the Praetoria
-          program by registering on the &#39;Join the program&#39; form. Only 57 validators will be
+          program by submitting your gentx for the genesis event. Validators may also join the testnet post the genesis event,
+	  but will miss out on the initial incentives to be part of the genesis event. Only 57 validators will be
           selected for phases 1 to 4 to become Dragoons, the official title for incentivized testnet
           participants. Phase 5 (by the end of the program) will open for developers to join
           though. <br />
@@ -109,9 +110,8 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     ),
     answer: (
       <p>
-        We have limited the Praetoria Incentivized Program to 57 Dragoons. You must register via our
-        <span className="furya-praetoria-web-bold-text">form </span> to be part of these 57
-        Dragoons. Our team will review your application and contact you if you are selected to join
+        We have limited the Praetoria Incentivized Program to 57 Dragoons. You must submit your
+	gentx for the genesis event. to be part of these 57 Dragoons selected to join
         the Praetoria Program.
       </p>
     )
@@ -141,9 +141,9 @@ const faqs = (urls: FAQUrls): FAQ[] => [
     ),
     answer: (
       <p>
-        To register for the Praetoria Program, complete the {' '}
-        <span className="furya-praetoria-web-bold-text">registration form</span> . We will review your
-        application and inform you if you have been accepted or not to our program.
+        To register for the Praetoria Program, submit your
+	gentx for the genesis event. to be part of these 57 Dragoons selected to join
+        the Praetoria Program.
       </p>
     )
   },
@@ -159,23 +159,6 @@ const faqs = (urls: FAQUrls): FAQ[] => [
         Yes, a certain amount technical skills is required to participate in the Praetoria Program. 
 	At minimum, you would need experience in Cosmos Validator node operations, maintenance 
 	and server management.
-      </p>
-    )
-  },
-  {
-    part: 'How to participate in the Praetoria Program',
-    question: (
-      <div className="furya-praetoria-web-tasks-accordion-title">
-        <h3>
-          I filled out the form but did not receive a response. Does this mean I was not accepted to
-          participate in the testnet?
-        </h3>
-      </div>
-    ),
-    answer: (
-      <p>
-        We will inform all people who have registered for the Praetoria Program by email. Whether you
-        are accepted or not, you will receive a response.
       </p>
     )
   },
