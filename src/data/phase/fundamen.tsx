@@ -157,7 +157,7 @@ export const fundamen = ({
       ],
       taskDuration: {
         from: '2024-05-11T00:00:00Z',
-        to: '2024-06-11T23:59:00Z'
+        to: '2024-06-18T23:59:00Z'
       },
       points: 500
     },
@@ -192,7 +192,7 @@ export const fundamen = ({
       ],
       taskDuration: {
         from: '2024-05-14T00:00:00Z',
-        to: '2024-06-17T23:59:00Z'
+        to: '2024-06-18T23:59:00Z'
       },
       points: 2500
     },
@@ -272,7 +272,7 @@ export const fundamen = ({
       ],
       taskDuration: {
         from: '2024-05-11T00:00:00Z',
-        to: '2024-06-11T23:59:00Z'
+        to: '2024-06-18T23:59:00Z'
       },
       points: 10000
     }
