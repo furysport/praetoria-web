@@ -23,9 +23,9 @@ export type PhasesConfig = {
     startDate: string
     endDate: string
     urls: {
-      logicModuleDocsUrl: string
+      allianceModuleDocsUrl: string
       gasConsumptionTypeformUrl: string
-      logicModuleTypeformUrl: string
+      allianceModuleTypeformUrl: string
     }
   }
 }
@@ -50,7 +50,7 @@ export type Config = {
       whitepaperUrl: string
       nodesUrl: string
       faqUrl: string
-      logicModuleUrl: string
+      allianceModuleUrl: string
     }
     supportUrls: {
       discordPraetoriaUrl: string

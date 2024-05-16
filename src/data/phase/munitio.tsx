@@ -58,7 +58,7 @@ export const munitio = ({
         }
       ],
       taskDuration: {
-        from: '2024-05-12T00:00:00Z',
+        from: '2024-05-13T00:00:00Z',
         to: '2024-06-19T23:59:59Z'
       },
       points: 1500
@@ -102,7 +102,7 @@ export const munitio = ({
         }
       ],
       taskDuration: {
-        from: '2024-05-12T00:00:00Z',
+        from: '2024-05-13T00:00:00Z',
         to: '2024-06-19T23:59:59Z'
       },
       points: 2000
@@ -160,8 +160,8 @@ export const munitio = ({
         }
       ],
       taskDuration: {
-        from: '2024-05-12T00:00:00Z',
-        to: '2024-08-12T23:59:59Z'
+        from: '2024-05-13T00:00:00Z',
+        to: '2024-08-18T23:59:59Z'
       },
       points: 2000
     },
@@ -244,8 +244,8 @@ export const munitio = ({
         }
       ],
       taskDuration: {
-        from: '2024-05-12T00:00:00Z',
-        to: '2024-08-12T23:59:59Z'
+        from: '2024-05-13T00:00:00Z',
+        to: '2024-08-18T23:59:59Z'
       },
       points: 15000
     }

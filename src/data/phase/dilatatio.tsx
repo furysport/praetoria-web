@@ -56,8 +56,8 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
         }
       ],
       taskDuration: {
-        from: '2024-05-13T12:00:00Z',
-        to: '2023-05-18T12:00:00Z'
+        from: '2024-05-19T12:00:00Z',
+        to: '2023-05-20T12:00:00Z'
       },
       points: 1500
     },
@@ -103,8 +103,8 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
         }
       ],
       taskDuration: {
-        from: '2024-05-14T12:00:00Z',
-        to: '2024-05-18T23:59:00Z'
+        from: '2024-05-19T12:00:00Z',
+        to: '2024-05-20T23:59:00Z'
       },
       points: 2500
     },
@@ -148,8 +148,8 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
         }
       ],
       taskDuration: {
-        from: '2024-05-13T12:00:00Z',
-        to: '2024-06-18T23:59:00Z'
+        from: '2024-05-19T12:00:00Z',
+        to: '2024-06-28T23:59:00Z'
       },
       points: 500
     },
@@ -190,8 +190,8 @@ export const dilatatio = ({ dilatatio: { startDate, endDate } }: PhasesConfig): 
         }
       ],
       taskDuration: {
-        from: '2024-05-13T12:00:00Z',
-        to: '2024-08-13T23:59:00Z'
+        from: '2024-05-19T12:00:00Z',
+        to: '2024-08-28T23:59:00Z'
       },
       points: 2500
     }

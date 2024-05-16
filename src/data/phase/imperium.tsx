@@ -20,148 +20,6 @@ export const imperium = ({
   },
   tasks: [
     {
-      group: 'Nodes',
-      taskName: 'Governance vote to reduce governance voting period',
-      taskContent: [
-        {
-          id: 'description',
-          title: 'Description',
-          contentDescription: (
-            <p>
-              We&apos;ll submit a governance proposal to introduce a reduction in voting period from
-              1209600 s (14 days) to 86400 s (1 day). To achieve this task you need to submit your
-              vote on this proposal.
-            </p>
-          )
-        },
-        {
-          id: 'rewards',
-          title: 'Rewards',
-          contentDescription: <p>1 000 points.</p>
-        },
-        {
-          id: 'criteria',
-          title: 'Judging Criteria',
-          contentDescription: (
-            <p>
-              You will receive the points once Furya team has checked your governance proposal vote
-              for the voting period.
-            </p>
-          )
-        },
-        {
-          id: 'submit',
-          title: 'How to Submit',
-          contentDescription: (
-            <p>
-              You just have to vote on the proposal with your delegator address - you don&apos;t
-              need to do anything else.
-            </p>
-          )
-        }
-      ],
-      taskDuration: {
-        from: '2024-05-18T12:00:00Z',
-        to: '2024-05-19T12:00:00Z'
-      },
-      points: 1000
-    },
-    {
-      group: 'Nodes',
-      taskName: 'Governance vote to perform a chain upgrade',
-      taskContent: [
-        {
-          id: 'description',
-          title: 'Description',
-          contentDescription: (
-            <p>
-              Following the developments during the phase, we&apos;ll submit a governance proposal
-              to upgrade the chain with a new version of the logic module. To achieve this task you
-              need to submit your vote on this proposal.
-            </p>
-          )
-        },
-        {
-          id: 'rewards',
-          title: 'Rewards',
-          contentDescription: <p>1 000 points.</p>
-        },
-        {
-          id: 'criteria',
-          title: 'Judging Criteria',
-          contentDescription: (
-            <p>
-              You will receive the points once Furya team has checked your governance proposal vote
-              for the chain upgrade regarding the logic module upgrade.
-            </p>
-          )
-        },
-        {
-          id: 'submit',
-          title: 'How to Submit',
-          contentDescription: (
-            <p>
-              You just have to vote on the proposal with your delegator address - you don&apos;t
-              need to do anything else.
-            </p>
-          )
-        }
-      ],
-      taskDuration: {
-        from: '2024-05-18T12:00:00Z',
-        to: '2024-05-18T12:00:00Z'
-      },
-      points: 1000
-    },
-    {
-      group: 'Nodes',
-      taskName: 'Upgrade your node on time',
-      taskContent: [
-        {
-          id: 'description',
-          title: 'Description',
-          contentDescription: (
-            <p>
-              Once the software upgrade governance proposal is accepted, Dragoons need to perform the
-              update. To achieve this task you need to make sure your node is updated on time and
-              doesn&apos;t miss blocks. The upgrade plan will be detailed in the governance
-              proposal, the upgrade height will target approximately the Mar. 22th.
-            </p>
-          )
-        },
-        {
-          id: 'rewards',
-          title: 'Rewards',
-          contentDescription: <p>2 500 points.</p>
-        },
-        {
-          id: 'criteria',
-          title: 'Judging Criteria',
-          contentDescription: (
-            <p>
-              Points will be awarded according to your uptime within the hour following the targeted
-              upgrade height.
-            </p>
-          )
-        },
-        {
-          id: 'submit',
-          title: 'How to Submit',
-          contentDescription: (
-            <p>
-              You just have to vote on the proposal with your validator address - you don&apos;t
-              need to do anything else.
-            </p>
-          )
-        }
-      ],
-      taskDuration: {
-        from: '2023-03-20T12:00:00Z',
-        to: '2023-04-13T23:59:00Z'
-      },
-      points: 2500
-    },
-    {
       group: 'Community',
       taskName: 'Tweet about Furya',
       taskContent: [
@@ -201,8 +59,8 @@ export const imperium = ({
         }
       ],
       taskDuration: {
-        from: '2023-03-01T00:00:00Z',
-        to: '2023-04-13T23:59:00Z'
+        from: '2024-05-18T00:00:00Z',
+        to: '2023-06-18T23:59:00Z'
       },
       points: 500
     },
@@ -273,23 +131,23 @@ export const imperium = ({
         }
       ],
       taskDuration: {
-        from: '2023-03-01T00:00:00Z',
-        to: '2023-04-13T23:59:00Z'
+        from: '2024-05-18T00:00:00Z',
+        to: '2023-06-28T23:59:00Z'
       },
       points: 10000
     },
     {
       group: 'Challenges',
-      taskName: 'Identify Failures in the Logic module',
+      taskName: 'Identify Failures in the Token Factory and Alliance module',
       taskContent: [
         {
           id: 'description',
           title: 'Description',
           contentDescription: (
             <p>
-              The newly introduced logic module may bring some possible security vulnerability (e.g.
-              determinism issue) and need thus to be well tested. If you find out such failure, send
-              us some explanations to reproduce the bug. You&apos;ll find logic module documentation
+              The newly introduced Token Factory and Alliance module may bring some possible security vulnerability 
+              and need thus to be well tested. If you find out such failure, send
+              us some explanations to reproduce the bug. You&apos;ll find Token Factory and Alliance module documentation
               here:{' '}
               <a href={logicModuleDocsUrl} rel="noreferrer" target="_blank">
                 {logicModuleDocsUrl}
@@ -327,8 +185,8 @@ export const imperium = ({
         }
       ],
       taskDuration: {
-        from: '2023-03-01T00:00:00Z',
-        to: '2023-04-13T23:59:00Z'
+        from: '2024-05-19T00:00:00Z',
+        to: '2024-06-28T23:59:00Z'
       },
       points: 10000
     },
@@ -363,8 +221,8 @@ export const imperium = ({
         }
       ],
       taskDuration: {
-        from: '2023-03-01T00:00:00Z',
-        to: '2023-04-13T23:59:00Z'
+        from: '2024-05-19T00:00:00Z',
+        to: '2024-08-28T23:59:00Z'
       },
       points: 3000
     }

@@ -20,7 +20,7 @@ export const config: Config = {
       whitepaperUrl: process.env.Furya_DOCS_URL,
       nodesUrl: process.env.Furya_DOCS_NODES_URL,
       faqUrl: process.env.Furya_DOCS_FAQ_URL,
-      logicModuleUrl: process.env.Furya_DOCS_LOGIC_MODULE_URL
+      allianceModuleUrl: process.env.Furya_DOCS_LOGIC_MODULE_URL
     },
     supportUrls: {
       discordPraetoriaUrl: process.env.Furya_DISCORD_PRAETORIA_URL,
@@ -67,9 +67,9 @@ export const config: Config = {
       startDate: process.env.Furya_PHASE_IMPERIUM_START_DATE,
       endDate: process.env.Furya_PHASE_IMPERIUM_END_DATE,
       urls: {
-        logicModuleDocsUrl: process.env.Furya_DOCS_LOGIC_MODULE_URL,
+        allianceModuleDocsUrl: process.env.Furya_DOCS_LOGIC_MODULE_URL,
         gasConsumptionTypeformUrl: process.env.Furya_TASKS_IMPERIUM_5_TYPEFORM_URL,
-        logicModuleTypeformUrl: process.env.Furya_TASKS_IMPERIUM_6_TYPEFORM_URL
+        allianceModuleTypeformUrl: process.env.Furya_TASKS_IMPERIUM_6_TYPEFORM_URL
       }
     }
   }
