@@ -82,6 +82,15 @@ export type BoardConnection = {
   readonly pageInfo: PageInfo;
 };
 
+/** Represents the bonus points attribution. */
+export type BonusPoints = {
+  readonly __typename?: 'BonusPoints';
+  /** The total number of bonus points attributed. */
+  readonly points: Scalars['UInt64'];
+  /** The reason why this bonus point has been attributed. */
+  readonly reason: Scalars['String'];
+};
+
 /** Represents an identity on https://keybase.io/ */
 export type Identity = {
   readonly __typename?: 'Identity';
@@ -148,6 +157,8 @@ export type Mutation = {
    * The concerned validator will be completely removed from the system..
    */
   readonly removeValidator?: Maybe<Scalars['Void']>;
+  /** Emit a `BonusPointsSubmittedEvent` in the system carrying information related to number of bonus points that need to be given to a validator. */
+  readonly submitBonusPoints?: Maybe<Scalars['Void']>;
   readonly submitTask?: Maybe<Scalars['Void']>;
   /**
    * Emit a `GenTXSubmittedEvent` in the system carrying information related to a dragoon participating to the Praetoria program, this contain the combination of technical validator information & application information.
@@ -165,6 +176,7 @@ export type Mutation = {
 
 
 export type MutationCompleteTaskArgs = {
+  override?: InputMaybe<Scalars['Boolean']>;
   phase: Scalars['Int'];
   points?: InputMaybe<Scalars['UInt64']>;
   task: Scalars['ID'];
@@ -201,6 +213,13 @@ export type MutationRegisterValidatorArgs = {
 
 
 export type MutationRemoveValidatorArgs = {
+  validator: Scalars['ValoperAddress'];
+};
+
+
+export type MutationSubmitBonusPointsArgs = {
+  points: Scalars['UInt64'];
+  reason: Scalars['String'];
   validator: Scalars['ValoperAddress'];
 };
 
@@ -398,6 +417,8 @@ export type TasksForPhaseArgs = {
 /** Represents a validator, a participant or a dragoon in the Praetoria program. */
 export type Validator = {
   readonly __typename?: 'Validator';
+  /** Additionally bonus points affected to the validator with the corresponding reason. */
+  readonly bonusPoints: ReadonlyArray<BonusPoints>;
   /** The validator country. */
   readonly country: Scalars['String'];
   /** The validator dashboard url. */
