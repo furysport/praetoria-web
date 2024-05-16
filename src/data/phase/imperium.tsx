@@ -6,7 +6,7 @@ export const imperium = ({
   imperium: {
     startDate,
     endDate,
-    urls: { logicModuleDocsUrl, gasConsumptionTypeformUrl, logicModuleTypeformUrl }
+    urls: { allianceModuleDocsUrl, gasConsumptionTypeformUrl, logicModuleTypeformUrl }
   }
 }: PhasesConfig): PhaseDTO => ({
   number: 4,
@@ -149,8 +149,8 @@ export const imperium = ({
               and need thus to be well tested. If you find out such failure, send
               us some explanations to reproduce the bug. You&apos;ll find Token Factory and Alliance module documentation
               here:{' '}
-              <a href={logicModuleDocsUrl} rel="noreferrer" target="_blank">
-                {logicModuleDocsUrl}
+              <a href={allianceModuleDocsUrl} rel="noreferrer" target="_blank">
+                {allianceModuleDocsUrl}
               </a>
             </p>
           )
