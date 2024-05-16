@@ -6,7 +6,7 @@ export const imperium = ({
   imperium: {
     startDate,
     endDate,
-    urls: { allianceModuleDocsUrl, gasConsumptionTypeformUrl, logicModuleTypeformUrl }
+    urls: { allianceModuleDocsUrl, gasConsumptionTypeformUrl, allianceModuleTypeformUrl }
   }
 }: PhasesConfig): PhaseDTO => ({
   number: 4,
@@ -176,7 +176,7 @@ export const imperium = ({
           contentDescription: (
             <p>
               Send us the vulnerability explanation with an example to reproduce it using{' '}
-              <a href={logicModuleTypeformUrl} rel="noreferrer" target="_blank">
+              <a href={allianceModuleTypeformUrl} rel="noreferrer" target="_blank">
                 this form
               </a>
               .
