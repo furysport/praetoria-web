@@ -31,8 +31,8 @@ const faqs = (urls: FAQUrls): FAQ[] => [
       <>
         <p>
           The Praetoria Program is the Furya Incentivized testnet. Any validator can apply for the Praetoria
-          program by submitting your gentx for the genesis event. Validators may also join the testnet post the genesis event,
-	  but will miss out on the initial incentives to be part of the genesis event. Only 57 validators will be
+          program by submitting your gentx for the genesis event. Validators may also join the testnet post the genesis event, 
+          but will miss out on the initial incentives to be part of the genesis event. Only 57 validators will be
           selected for phases 1 to 4 to become Dragoons, the official title for incentivized testnet
           participants. Phase 5 (by the end of the program) will open for developers to join
           though. <br />
