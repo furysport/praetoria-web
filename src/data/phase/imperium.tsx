@@ -61,8 +61,8 @@ export const imperium = ({
         }
       ],
       taskDuration: {
-        from: '2023-03-01T12:00:00Z',
-        to: '2023-03-15T12:00:00Z'
+        from: '2024-05-18T12:00:00Z',
+        to: '2024-05-19T12:00:00Z'
       },
       points: 1000
     },
@@ -108,8 +108,8 @@ export const imperium = ({
         }
       ],
       taskDuration: {
-        from: '2023-03-16T12:00:00Z',
-        to: '2023-03-17T12:00:00Z'
+        from: '2024-05-18T12:00:00Z',
+        to: '2024-05-18T12:00:00Z'
       },
       points: 1000
     },
